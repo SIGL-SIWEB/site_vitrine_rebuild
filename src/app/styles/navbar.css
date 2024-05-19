@@ -1,0 +1,14 @@
+  .stickyNavbar {
+    background-color: #1E3C63;
+    transition: background-color 0.5s ease-in-out;
+    opacity: 0.7;
+  }
+  
+.stickyNavbar a {
+    color: white;
+  }
+
+.stickyNavbar a:hover {
+    color: #00182e;
+  }
+  
