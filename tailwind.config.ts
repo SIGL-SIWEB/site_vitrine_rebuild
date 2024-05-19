@@ -18,6 +18,9 @@ const config: Config = {
       '7xl': ['4rem', { lineHeight: '4.5rem' }],
     },
     extend: {
+      colors: {
+        darkblue: '#38598F'
+      },
       borderRadius: {
         '4xl': '2.5rem',
       },

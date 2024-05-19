@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import { Container } from './Container'
+import { Container } from '@/app/components/Container'
 import Image from 'next/image'
-import epita_image from '../assets/logo/epita.jpg'
+import epita_image from '@/app/assets/logo/epita.jpg'
 
 export function Footer() {
   return (
