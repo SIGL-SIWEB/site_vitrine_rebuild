@@ -31,12 +31,12 @@ const images = [
     text: 'Maintain and renew the link with former students, and allow future engineers to exchange with those who preceded them: it is with this in mind that the SIGL BBQ is organized each year, bringing together teachers,\nformer students and future graduates',
     imgPath: bbq,
   },
-  {
-    id: 3,
-    titre: 'Afterwork SIGL',
-    text: 'To establish a culture of team cohesion and in order to boost up the dialogue between teams, moments of exchange and relaxation bringing together teachers and students are organised',
-    imgPath: afterwork,
-  },
+  // {
+  //   id: 3,
+  //   titre: 'Afterwork SIGL',
+  //   text: 'To establish a culture of team cohesion and in order to boost up the dialogue between teams, moments of exchange and relaxation bringing together teachers and students are organised',
+  //   imgPath: afterwork,
+  // },
   {
     id: 4,
     titre: 'Laser Game',
