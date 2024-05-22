@@ -7,6 +7,8 @@ export function TextInput({
   }: React.ComponentPropsWithoutRef<'input'> & { error: boolean } & { label: string }) {
     let id = useId()
   
+    const baseClassName = 'peer block w-full border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl'
+    const errorClassName = 'border-red-500 border'
     return (
       <div className="group relative z-0 transition-all focus-within:z-10">
         <input
@@ -14,7 +16,7 @@ export function TextInput({
           id={id}
           {...props}
           placeholder=" "
-          className={error ? 'border-red-500 peer block w-full border bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl' : 'peer block w-full border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl'}
+          className={`${baseClassName} ${error ? errorClassName : ''}`}
         />
         <label
           htmlFor={id}
