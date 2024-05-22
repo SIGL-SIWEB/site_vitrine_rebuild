@@ -61,7 +61,6 @@ export function ContactForm() {
             error={errors.email}
             value={formData.email}
             onChange={handleChange}
-            className={errors.email ? 'border-red-500' : ''}
           />
           <TextInput label="Question" name="message" value={formData.message} onChange={handleChange} error={errors.message}/>
         </div>
