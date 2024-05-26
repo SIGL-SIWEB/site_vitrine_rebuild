@@ -6,6 +6,8 @@
   
 .stickyNavbar a {
     color: white;
+    display: inline-block;
+    margin: 0 10px;
   }
 
 .stickyNavbar a:hover {
