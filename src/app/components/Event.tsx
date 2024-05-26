@@ -32,12 +32,6 @@ const images = [
     imgPath: bbq,
   },
   {
-    id: 3,
-    titre: 'Afterwork SIGL',
-    text: 'To establish a culture of team cohesion and in order to boost up the dialogue between teams, moments of exchange and relaxation bringing together teachers and students are organised',
-    imgPath: afterwork,
-  },
-  {
     id: 4,
     titre: 'Laser Game',
     text: 'Class representatives are taking the initiative to regulary organize some ecents within the major (cinema, laser game, etc.) in order to give students the opportunity to connect with each others beyond the professional environment',

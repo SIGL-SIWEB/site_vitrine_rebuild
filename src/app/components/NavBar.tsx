@@ -11,10 +11,11 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
     { name: 'Home', href: '/' },
-    { name: 'Courses', href: '/about' },
-    { name: 'Projects', href: '/work' },
-    { name: 'Alumnis', href: '/process' },
+    { name: 'Courses', href: '/courses' },
+    { name: 'Projects', href: '/project' },
+    { name: 'Alumnis', href: '/alumnis' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Intranet', href: 'https://intranet.sigl.epita.fr/' },
   ]
 
 
