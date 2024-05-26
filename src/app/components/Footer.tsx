@@ -12,7 +12,10 @@ export function Footer() {
             <Image src={epita_image} alt="" className="w-20 h-auto" />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Epita SIGL {new Date().getFullYear()}
+            Epita - SIGL 2025
+          </p>
+          <p className="text-sm text-neutral-700">
+            © {new Date().getFullYear()}
           </p>
         </div>
     </Container>
