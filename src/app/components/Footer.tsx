@@ -1,18 +1,9 @@
 import Link from 'next/link'
-import { IonIcon } from '@ionic/react';
 import { Container } from '@/app/components/Container'
 import Image from 'next/image'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import epita_image from '@/app/assets/logo/epita.jpg'
-import { logoTwitter } from 'ionicons/icons';
-import { logoLinkedin } from 'ionicons/icons';
-
-const twitterColor = {
-  color: '#1DA1F2'
-}
-
-const linkedinColor = {
-  color: '#2867B2'
-}
 
 export function Footer() {
   return (
@@ -21,8 +12,8 @@ export function Footer() {
         <Link href="https://www.epita.fr/" aria-label="Home">
           <Image src={epita_image} alt="" className="w-20 h-auto" />
         </Link>
-        <span style={twitterColor}><a href='https://x.com/SIGL_EPITA'><IonIcon size='large' icon={logoTwitter} /></a></span>
-        <span style={linkedinColor}><a href='#'><IonIcon size='large' icon={logoLinkedin} /></a></span>
+        <a href=''><LinkedInIcon fontSize='large' style={{ color: '#2867B2' }}/></a>
+        <a href='https://x.com/SIGL_EPITA'><TwitterIcon fontSize='large' style={{ color: '#1DA1F2' }}/></a>
         <p className="text-sm text-neutral-700">
         SIGL © {new Date().getFullYear()}
         </p>
