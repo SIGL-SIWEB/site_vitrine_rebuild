@@ -32,11 +32,10 @@ export default async function Home() {
 
       <ProjectList />
 
+      <Opportunities />
+      
       <Event />
 
-      <Opportunities />
-
-      <ContactSection />
     </>
   )
 }
