@@ -4,7 +4,6 @@ import { ModuleList } from "@/app/home/ModuleList"
 import { Quote } from "@/app/components/Quote"
 import { ProjectList } from "@/app/home/ProjectList"
 import { Event } from "@/app/components/Event"
-import { ContactSection } from "@/app/components/ContactSection"
 import { Opportunities } from "@/app/home/Opportunities"
 
 export default async function Home() {
@@ -12,7 +11,7 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-darkblue [text-wrap:balance] sm:text-7xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight text-darkblue [text-wrap:balance] sm:text-7xl xs:pt-8">
             Système d'Information & Génie Logiciel
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
