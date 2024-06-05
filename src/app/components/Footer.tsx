@@ -12,7 +12,7 @@ export function Footer() {
         <Link href="https://www.epita.fr/" aria-label="Home">
           <Image src={epita_image} alt="" className="w-20 h-auto" />
         </Link>
-        <a href=''><LinkedInIcon fontSize='large' style={{ color: '#2867B2' }}/></a>
+        <a href='https://www.linkedin.com/groups/3826/'><LinkedInIcon fontSize='large' style={{ color: '#2867B2' }}/></a>
         <a href='https://x.com/SIGL_EPITA'><TwitterIcon fontSize='large' style={{ color: '#1DA1F2' }}/></a>
         <p className="text-sm text-neutral-700">
         SIGL © {new Date().getFullYear()}

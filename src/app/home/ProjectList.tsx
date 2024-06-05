@@ -40,7 +40,7 @@ export function ProjectList() {
                 Creation of a reduced Information System simulating a Retail company's behavior
                 </ListItem>
                 <ListItem>
-                    <Button href="/work" invert>
+                    <Button href="/project" invert>
                     See more projects
                     </Button>
                 </ListItem>
