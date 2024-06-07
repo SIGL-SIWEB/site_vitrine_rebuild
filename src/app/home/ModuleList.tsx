@@ -66,7 +66,7 @@ export function ModuleList() {
 
           </FadeInStagger>
           <div className="ratio ratio-16x9 mt-16 flex justify-center">
-            <iframe height="600px" width="1067px" src="https://www.youtube.com/embed/F6WOmx52qBY?showinfo=0&controls=0&rel=0" title="YouTube video" allowFullScreen></iframe>
+            {/* <iframe height="600px" width="1067px" src="https://www.youtube.com/embed/F6WOmx52qBY?showinfo=0&controls=0&rel=0" title="YouTube video" allowFullScreen></iframe> */}
           </div>
         </Container>
       </div>
