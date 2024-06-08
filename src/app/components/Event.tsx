@@ -66,7 +66,7 @@ export function Event() {
               <Carousel autoPlay interval={5000} infiniteLoop showStatus={false} showThumbs={false}>
                 {images.map((image) => (
                   <div key={image.id}>
-                      <Image src={image.imgPath} alt=""/>
+                    <Image src={image.imgPath} alt=""/>
                     <div className="overlay">
                       <h2 className='overlay-title'>{image.titre}</h2>
                       <p>{image.text}</p>
