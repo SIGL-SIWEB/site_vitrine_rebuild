@@ -31,6 +31,9 @@ const config: Config = {
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      screens: {
+        'xs': '320px'
+      }
     },
   },
   plugins: [],

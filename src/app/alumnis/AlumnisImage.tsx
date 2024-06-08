@@ -16,7 +16,7 @@ export function AlumnisImage({
         <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20">
           <div className="flex justify-center">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <Image src={image} alt="" className="w-1800 h-auto" />
+              <Image src={image} alt="photo de promo"/>
             </FadeIn>
           </div>
           <div className="mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first">

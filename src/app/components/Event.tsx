@@ -13,9 +13,8 @@ import { Carousel } from 'react-responsive-carousel';
 import "@/app/styles/event.css"
 
 import classe2023 from '@/app/assets/events/classe2023.jpg'
-import bbq from '@/app/assets/events/bbq.jpg'
-import afterwork from '@/app/assets/events/afterwork.jpg'
-import laser from '@/app/assets/events/laser.jpg'
+import bbq from '@/app/assets/events/bbq.png'
+import laser from '@/app/assets/events/laser.png'
 import disintegration from '@/app/assets/events/disintegration.jpg'
 
 const images = [
