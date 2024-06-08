@@ -48,10 +48,11 @@ export function NavBar() {
           <Link
             href="/"
             aria-label="Home"
+            className='lg:flex lg:flex-1 md:flex md:flex-1 xs:flex xs:flex-1'
           >
-            <Image src={sigl_image} alt="" className="w-32 h-auto" />
+            <Image src={sigl_image} alt="logo SIGL" className="w-20 h-auto" />
           </Link>
-          <div className="lg:flex md:flex sm:flex xs:hidden">
+          <div className="lg:flex md:flex sm:flex xs:hidden lg:justify-center">
             {navigation.map((item, index) => (
               <a key={index} href={item.href} className="text-[#1E3C63] lg:px-6 md:px-4 xs:px-2">
                 <strong>{item.name}</strong>
@@ -63,10 +64,11 @@ export function NavBar() {
               <strong>SIGL</strong>
             </div>
           )}
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end" />
           <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end">
             <button
               type="button"
-              className={`items-center justify-center rounded-md p-2.5 ${isScroll ? 'text-white' : 'text-gray-700'}`}
+              className={`items-center justify-center rounded-md pl-14 ${isScroll ? 'text-white' : 'text-gray-700'}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <RxCross2 size={25} /> : <FaBars size={25} />}
@@ -84,7 +86,8 @@ export function NavBar() {
             }`}
           >
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-bold">Menu</h2>
+              <Image src={sigl_image} alt="logo SIGL" className="w-16 h-auto" />
+              <h2 className="text-xl font-bold text-[#1E3C63]">Menu</h2>
               <button
                 type="button"
                 className="text-gray-700"
@@ -97,7 +100,7 @@ export function NavBar() {
               <a
                 key={index}
                 href={item.href}
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-200 rounded"
+                className="block px-4 py-2 text-[#1E3C63] hover:bg-gray-200 rounded"
               >
                 <strong>{item.name}</strong>
               </a>
