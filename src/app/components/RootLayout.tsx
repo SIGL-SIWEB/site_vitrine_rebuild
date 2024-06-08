@@ -9,37 +9,17 @@ import {
 } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
-import Image from 'next/image'
+import { motion, useReducedMotion } from 'framer-motion'
 
 import { Container } from '@/app/components/Container'
 import { Footer } from '@/app/components/Footer'
 import { GridPattern } from '@/app/components/GridPattern'
-import sigl_image from '@/app/assets/logo/sigl.jpg'
 import { NavBar } from '@/app/components/NavBar'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
   setLogoHovered: React.Dispatch<React.SetStateAction<boolean>>
 } | null>(null)
-
-function Header() {
-
-  return (
-    <Container>
-      <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          aria-label="Home"
-        >
-          <Image src={sigl_image} alt="" className="w-32 h-auto" />
-        </Link>
-        
-        <NavBar/>
-      </div>
-    </Container>
-  )
-}
 
 function NavigationRow({ children }: { children: React.ReactNode }) {
   return (
@@ -108,61 +88,33 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
   }, [])
 
   return (
-    <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
-      <header>
-        <div
-          className="absolute left-0 right-0 top-2 z-40 pt-14"
-          aria-hidden={expanded ? 'true' : undefined}
-          // @ts-ignore
-          inert={expanded ? '' : undefined}
-        >
-          <Header />
-        </div>
-
+    <div>
+      <div className='fixed z-10 w-full'>
+        <NavBar/>
+      </div>
+      <div className='z-0'>
         <motion.div
           layout
-          id={panelId}
-          style={{ height: expanded ? 'auto' : '0.5rem' }}
-          className="relative z-50 overflow-hidden bg-neutral-950 pt-2"
-          aria-hidden={expanded ? undefined : 'true'}
-          // @ts-ignore
-          inert={expanded ? undefined : ''}
+          style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
+          className="relative flex flex-auto overflow-hidden bg-[#EDEFF4] pt-14"
         >
-          <motion.div layout className="bg-neutral-800">
-            <div ref={navRef} className="bg-[#00182e] pb-16 pt-14">
-              <Header/>
-            </div>
-            <Navigation />
-            <div className="relative bg-[#00182e] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
-              <Container>
-                <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16"></div>
-              </Container>
-            </div>
+          <motion.div
+            layout
+            className="relative isolate flex w-full flex-col pt-9"
+          >
+            <GridPattern
+              className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-[#315888] stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
+              yOffset={-96}
+              interactive
+            />
+
+            <main className="w-full flex-auto">{children}</main>
+
+            <Footer />
           </motion.div>
         </motion.div>
-      </header>
-
-      <motion.div
-        layout
-        style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-        className="relative flex flex-auto overflow-hidden bg-[#EDEFF4] pt-14"
-      >
-        <motion.div
-          layout
-          className="relative isolate flex w-full flex-col pt-9"
-        >
-          <GridPattern
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-[#315888] stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
-            yOffset={-96}
-            interactive
-          />
-
-          <main className="w-full flex-auto">{children}</main>
-
-          <Footer />
-        </motion.div>
-      </motion.div>
-    </MotionConfig>
+      </div>
+    </div>
   )
 }
 
