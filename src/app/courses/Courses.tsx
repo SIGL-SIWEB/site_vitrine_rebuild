@@ -43,18 +43,12 @@ export function CourseList() {
                               </AccordionSummary>
                               <AccordionDetails>
                                 {course.teacher.map((teacher, index) => (
-                                  <div key={index} className='mb-7 col'>
+                                  <div key={index} className='mb-7'>
                                     <span className='text-lg text-[#1E3C63]'>{teacher.name}</span>
+                                    <br />
                                     <span className='text-sm text-black'>{teacher.role}</span>
                                   </div>
                                 ))}
-                                <div className='flex justify-end'>
-                                  {course.project && (
-                                    <Button href={course.project}>
-                                      See the course project
-                                    </Button>
-                                  )}
-                                </div>
                                 <div className='flex'>
                                   <div>
                                     <span className='text-lg text-[#1E3C63]'>{course.obj}</span>
@@ -62,9 +56,14 @@ export function CourseList() {
                                         <li key={index} className="text-base text-black">{objective}</li>
                                     ))}
                                   </div>
-                                  
                                 </div>
-                                
+                                <div className='flex justify-end'>
+                                    {course.project && (
+                                      <Button href={course.project}>
+                                        See the course project
+                                      </Button>
+                                    )}
+                                </div>
                               </AccordionDetails>
                             </Accordion>
                           </div>
