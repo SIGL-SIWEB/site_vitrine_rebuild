@@ -22,7 +22,7 @@ export default function Alumnis() {
     <>
       <PageIntro eyebrow="Alumnis - SIGL" title="Alumnis">
         <p>
-          Meet the graduates of the Information Systems and Software Engineering major, <a href=""></a>lumni who have successfully completed our program
+          Meet the graduates of the Information Systems and Software Engineering major, <a href=""></a>alumni who have successfully completed our program
         </p>
       </PageIntro>
 
