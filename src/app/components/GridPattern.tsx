@@ -36,10 +36,11 @@ export function GridPattern({
     Array<[x: number, y: number, key: number]>
   >([])
   let staticBlocks = [
-    [2, 2],
+    [6, 1],
     [4, 3],
-    [6, 2],
     [7, 4],
+    [8, 2],
+    [9, 5],
     [5, 5],
   ]
 

@@ -10,7 +10,7 @@ export function Opportunities() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        Opportunities description
+        SIGL major offers a diverse array of career opportunities across various domains. Whether you aspire to be a developer, a business engineer, or a project leader, this major equips you with the skills and knowledge to excel in technical, commercial, organizational, and multidisciplinary roles.
         </p>
       </SectionIntro>
       <Container className="mt-16">
