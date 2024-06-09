@@ -22,12 +22,7 @@ export default async function Home() {
 
       <ModuleList />
 
-      <Quote
-        className="mt-24 sm:mt-32 lg:mt-40"
-        alumni={{ name: 'alumni', promotion: 2020}}
-      >
-        Example of Citation..
-      </Quote>
+      <Quote />
 
       <ProjectList />
 
