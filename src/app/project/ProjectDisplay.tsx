@@ -7,13 +7,14 @@ export function ProjectDisplay({
     projects,
   }: {
     projects: {
-      client: string;
+      course: string;
       href: string;
       logo: StaticImageData;
       title: string;
       summary: string[];
   }[]
   }) {
+    
     return (
       <Container className="mt-40">
         <FadeIn>
@@ -23,7 +24,7 @@ export function ProjectDisplay({
         </FadeIn>
         <div className="mt-10 space-y-20">
           {projects.map((project) => (
-            <FadeIn key={project.client}>
+            <FadeIn key={project.course}>
               <article>
                 <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
                   <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
@@ -35,12 +36,12 @@ export function ProjectDisplay({
                         unoptimized
                       />
                       <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                        {project.client}
+                        {project.course}
                       </h3>
                     </div>
                   </div>
                   <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
-                    <p className="font-display text-4xl font-medium text-darkblue">
+                    <p id={project.course} className="font-display text-4xl font-medium text-darkblue">
                       {project.title}
                     </p>
                     <div className="mt-6 space-y-6 text-base text-neutral-600">

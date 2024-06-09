@@ -4,9 +4,9 @@ import { CourseList } from '@/app/courses/Courses'
 export default async function Courses() {
   return (
     <>
-      <PageIntro eyebrow="Courses - SIGL" title="Courses' title">
+      <PageIntro eyebrow="Courses - SIGL" title="SIGL Modules">
         <span>
-          Courses' description
+          Explore the comprehensive list of modules and courses offered in SIGL. Organized into four main categories, this catalog covers a wide range of essential skills to train the engineers of tomorrow
         </span>
       </PageIntro>
       <CourseList />

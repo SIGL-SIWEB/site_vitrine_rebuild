@@ -45,6 +45,7 @@ export const moduleList = [
             'Being able to reinforce professional efficiency using a better communication',
             'Being able to manage its own professional project'
           ],
+          project: '/project#OPCO',
         },
         {
           name: 'OPDI : Information Systems Steering and Organization',
@@ -76,6 +77,7 @@ export const moduleList = [
             'Understand key notions of Cloud Computing',
             'Test an open-source Cloud solution'
           ],
+          project: '/project#ARCL',
         },
         {
           name: 'CONT : Containerization',
@@ -152,6 +154,7 @@ export const moduleList = [
             'Learn key concepts of UML and Object-oriented development',
             'Practice several conception approaches'
           ],
+          project: '/project#ACOO',
         },
         {
           name: 'DEVO : DevOps',
@@ -271,6 +274,7 @@ export const moduleList = [
             'Solve an enterprise problem by designing and creating an IoT solution',
             'Develop synthesis, analysis and innovation skills'
           ],
+          project: '/project#PIT',
         },
         {
           name: 'PMDE : Project : Operating Instructions',

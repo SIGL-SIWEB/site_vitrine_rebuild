@@ -1,6 +1,7 @@
 import { Border } from '@/app/components/Border'
 import { Container } from '@/app/components/Container'
 import { FadeIn } from '@/app/components/FadeIn'
+import { Button } from '@/app/components/Button';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -10,6 +11,7 @@ import { moduleList } from '@/app/courses/ModuleList';
 import * as React from 'react';
   
 export function CourseList() {
+  
     return (
       <div>
         <Container className="mt-40">
@@ -40,17 +42,29 @@ export function CourseList() {
                                 <Typography className='text-[#38598F] font-semibold text-lg'>{course.name}</Typography>
                               </AccordionSummary>
                               <AccordionDetails>
-                                  {course.teacher.map((teacher, index) => (
-                                    <div key={index} className='mb-7'>
-                                      <span className='text-lg text-[#1E3C63]'>{teacher.name}</span>
-                                      <br/>
-                                      <span className='text-sm text-black'>{teacher.role}</span>
-                                    </div>
-                                  ))}
-                                <span className='text-lg text-[#1E3C63]'>{course.obj}</span>
+                                {course.teacher.map((teacher, index) => (
+                                  <div key={index} className='mb-7 col'>
+                                    <span className='text-lg text-[#1E3C63]'>{teacher.name}</span>
+                                    <span className='text-sm text-black'>{teacher.role}</span>
+                                  </div>
+                                ))}
+                                <div className='flex justify-end'>
+                                  {course.project && (
+                                    <Button href={course.project}>
+                                      See the course project
+                                    </Button>
+                                  )}
+                                </div>
+                                <div className='flex'>
+                                  <div>
+                                    <span className='text-lg text-[#1E3C63]'>{course.obj}</span>
                                     {course.objectives.map((objective, index) => (
-                                      <li key={index} className="text-base text-black">{objective}</li>
+                                        <li key={index} className="text-base text-black">{objective}</li>
                                     ))}
+                                  </div>
+                                  
+                                </div>
+                                
                               </AccordionDetails>
                             </Accordion>
                           </div>

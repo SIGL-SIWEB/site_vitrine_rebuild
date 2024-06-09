@@ -68,7 +68,7 @@ export function NavBar() {
           <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end">
             <button
               type="button"
-              className={`items-center justify-center rounded-md pl-14 ${isScroll ? 'text-white' : 'text-gray-700'}`}
+              className={`items-center justify-center rounded-md ${isScroll ? 'text-white' : 'text-gray-700'}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <RxCross2 size={25} /> : <FaBars size={25} />}
