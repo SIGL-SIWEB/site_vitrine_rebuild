@@ -45,7 +45,6 @@ export const moduleList = [
             'Being able to reinforce professional efficiency using a better communication',
             'Being able to manage its own professional project'
           ],
-          project: '/project#OPCO',
         },
         {
           name: 'OPDI : Information Systems Steering and Organization',
@@ -135,6 +134,7 @@ export const moduleList = [
             'Understanding Integration issues within the Information System',
             'Grasp the concept of innovation within the IS'
           ],
+          project: '/project#UBSI',
         },
       ],
     },
@@ -190,6 +190,7 @@ export const moduleList = [
             'Experiment tools associated with Agile\'s planning and development methods',
             'Face issues such as repriorization and silver bullet'
           ],
+          project: '/project#MEPA',
         },
         {
           name: 'NLPF : New Programming Languages & Frameworks',
@@ -218,6 +219,7 @@ export const moduleList = [
             'To put the architecture and the architect into the organization',
             'Know how to analyze the relevance of software technologies for needs',
           ],
+          project: '/project#SOCRA',
         },
       ],
     },

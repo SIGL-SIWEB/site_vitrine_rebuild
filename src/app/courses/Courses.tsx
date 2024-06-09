@@ -11,7 +11,6 @@ import { moduleList } from '@/app/courses/ModuleList';
 import * as React from 'react';
   
 export function CourseList() {
-  
     return (
       <div>
         <Container className="mt-40">
@@ -68,13 +67,13 @@ export function CourseList() {
                             </Accordion>
                           </div>
                           ))}
-                    </div>
                   </div>
-                </Border>
-              </FadeIn>
-            ))}
-          </div>
-        </Container>
-      </div>
-    )
-  }
+                </div>
+              </Border>
+            </FadeIn>
+          ))}
+        </div>
+      </Container>
+    </div>
+  )
+}
