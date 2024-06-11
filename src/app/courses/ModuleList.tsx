@@ -76,6 +76,7 @@ export const moduleList = [
             'Understand key notions of Cloud Computing',
             'Test an open-source Cloud solution'
           ],
+          project: '/project#ARCL',
         },
         {
           name: 'CONT : Containerization',
@@ -133,6 +134,7 @@ export const moduleList = [
             'Understanding Integration issues within the Information System',
             'Grasp the concept of innovation within the IS'
           ],
+          project: '/project#UBSI',
         },
       ],
     },
@@ -152,6 +154,7 @@ export const moduleList = [
             'Learn key concepts of UML and Object-oriented development',
             'Practice several conception approaches'
           ],
+          project: '/project#ACOO',
         },
         {
           name: 'DEVO : DevOps',
@@ -187,6 +190,7 @@ export const moduleList = [
             'Experiment tools associated with Agile\'s planning and development methods',
             'Face issues such as repriorization and silver bullet'
           ],
+          project: '/project#MEPA',
         },
         {
           name: 'NLPF : New Programming Languages & Frameworks',
@@ -215,6 +219,7 @@ export const moduleList = [
             'To put the architecture and the architect into the organization',
             'Know how to analyze the relevance of software technologies for needs',
           ],
+          project: '/project#SOCRA',
         },
       ],
     },
@@ -271,6 +276,7 @@ export const moduleList = [
             'Solve an enterprise problem by designing and creating an IoT solution',
             'Develop synthesis, analysis and innovation skills'
           ],
+          project: '/project#PIT',
         },
         {
           name: 'PMDE : Project : Operating Instructions',

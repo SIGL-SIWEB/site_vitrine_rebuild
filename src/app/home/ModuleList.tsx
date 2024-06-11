@@ -7,7 +7,7 @@ export function ModuleList() {
     <>
       <div id="modules">
         <SectionIntro
-          title="Modules SIGL"
+          title="SIGL Modules"
           className="mt-24 sm:mt-32 lg:mt-40"
         >
           <p>

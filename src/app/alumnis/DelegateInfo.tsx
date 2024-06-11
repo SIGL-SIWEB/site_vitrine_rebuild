@@ -7,7 +7,7 @@ export function DelegateInfo({ delegates }: {
     delegates: { names: string[], linkedinUrl: string[], year: number }
 }) {
   return (
-    <div>
+    <>
         <Border position="left" className={clsx('pl-8')}>
             <figure className="text-md">
                 <div className='flex flex-col mt-6 space-y-4'>
@@ -40,6 +40,6 @@ export function DelegateInfo({ delegates }: {
                 </div>
             </figure>
         </Border>
-    </div>
+    </>
   );
 };
