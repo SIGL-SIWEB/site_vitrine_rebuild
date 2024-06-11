@@ -1,309 +1,405 @@
+import { Button } from '@/app/components/Button';
+import { Border } from '@/app/components/Border'
+import { FadeIn } from '@/app/components/FadeIn'
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useTranslation } from "react-i18next";
 
-export const moduleList = [
+export function ModuleList() {
+  const { t } = useTranslation('fr', { useSuspense: false });
+
+  const moduleList = [
     {
-      title: 'Leadership & Management',
+      title: t('courses.leadership.title'),
       courses: [
         {
-          name: 'CEC : Coaching and communication',
+          name: t('courses.leadership.courses.course1.title'),
           teacher: [{
-            name: 'Christophe Andreu',
-            role: 'Corporate Coach / Independent Consultant / Trainer | ACC',
+            name: t('courses.leadership.courses.course1.teachers.teacher1.name'),
+            role: t('courses.leadership.courses.course1.teachers.teacher1.role'),
           
           },],
-          obj : 'Objectives',
-          objectives: ['Coaching workshops', 'Set of methodologies to help better understand the different aspects of communication'],
+          obj : t('courses.leadership.courses.course1.objectives.title'),
+          objectives: [t('courses.leadership.courses.course1.objectives.objective1'), t('courses.leadership.courses.course1.objectives.objective2')],
         },
         {
-          name: 'COIN : Interpersonnal communication',
+          name: t('courses.leadership.courses.course2.title'),
           teacher: [{
-            name: 'Anne Dewilde',
-            role: 'Head of EPITA\'s Innovation Laboratory | EPITA',
+              name: t('courses.leadership.courses.course2.teachers.teacher1.name'),
+              role: t('courses.leadership.courses.course2.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Learn to know yourself', 'Develop your know-how-to-be', 'Understand the key concepts of communication and teamwork'],
-        },
-        {
-          name: 'MOAE : Information System Project Management',
-          teacher: [{
-            name: 'Guillaume Barbier',
-            role: 'Project Management Officer | Imerys',
-          }],
-          obj : 'Objectives',
-          objectives: ['Apprehend and understand Information System from a company\'s Point of view',
-            'Identify roles, missions and positioning of Project Management',
-            'Define responsibilities between Project Management\'s business units',
-            'Being Able to conduct an organizational study for IT products / services'
+          obj: t('courses.leadership.courses.course2.objectives.title'),
+          objectives: [
+              t('courses.leadership.courses.course2.objectives.objective1'),
+              t('courses.leadership.courses.course2.objectives.objective2'),
+              t('courses.leadership.courses.course2.objectives.objective3'),
           ],
         },
         {
-          name: 'OPCO : Personal Organization and Communication',
+          name: t('courses.leadership.courses.course3.title'),
           teacher: [{
-            name: 'Christophe Andreu',
-            role: 'Executive Coach ICF PCC',
+              name: t('courses.leadership.courses.course3.teachers.teacher1.name'),
+              role: t('courses.leadership.courses.course3.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Being able to manage time, and efficiently apply a personal organization',
-            'Being able to reinforce professional efficiency using a better communication',
-            'Being able to manage its own professional project'
+          obj: t('courses.leadership.courses.course3.objectives.title'),
+          objectives: [
+              t('courses.leadership.courses.course3.objectives.objective1'),
+              t('courses.leadership.courses.course3.objectives.objective2'),
+              t('courses.leadership.courses.course3.objectives.objective3'),
+              t('courses.leadership.courses.course3.objectives.objective4'),
           ],
         },
         {
-          name: 'OPDI : Information Systems Steering and Organization',
+          name: t('courses.leadership.courses.course4.title'),
           teacher: [{
-            name: 'Laurence Jumeaux',
-            role: 'Vice-President Business Technology Innovation | Capgemini',
+            name: t('courses.leadership.courses.course4.teachers.teacher1.name'),
+            role: t('courses.leadership.courses.course4.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Understand digital impact on Information Systems',
-            'Improve IT System Department\'s performance',
-            'Build a target infrastructure',
-            'Evaluate IT Projects\' Return on Investment',
-            'Understand IT System Department Cost Reduction Levers'
+          obj: t('courses.leadership.courses.course4.objectives.title'),
+          objectives: [
+            t('courses.leadership.courses.course4.objectives.objective1'),
+            t('courses.leadership.courses.course4.objectives.objective2'),
+            t('courses.leadership.courses.course4.objectives.objective3'),
+          ],
+        },
+        {
+          name: t('courses.leadership.courses.course5.title'),
+          teacher: [{
+            name: t('courses.leadership.courses.course5.teachers.teacher1.name'),
+            role: t('courses.leadership.courses.course5.teachers.teacher1.role'),
+          }],
+          obj: t('courses.leadership.courses.course5.objectives.title'),
+          objectives: [
+            t('courses.leadership.courses.course5.objectives.objective1'),
+            t('courses.leadership.courses.course5.objectives.objective2'),
+            t('courses.leadership.courses.course5.objectives.objective3'),
+            t('courses.leadership.courses.course5.objectives.objective4'),
+            t('courses.leadership.courses.course5.objectives.objective5'),
           ],
         },
       ],
     },
     {
-      title: 'Cloud & Architecture',
+      title: t('courses.cloud.title'),
       courses: [
         {
-          name: 'ARCL : Cloud Architecture',
+          name: t('courses.cloud.courses.course1.title'),
           teacher: [{
-            name: 'Yannick Neff',
-            role: 'Group Cloud & Infrastructure Director | SUEZ',
+            name: t('courses.cloud.courses.course1.teachers.teacher1.name'),
+            role: t('courses.cloud.courses.course1.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Validate skills acquisition by building an hybrid cloud and a cloud-based application',
-            'Understand key notions of Cloud Computing',
-            'Test an open-source Cloud solution'
+          obj: t('courses.cloud.courses.course1.objectives.title'),
+          objectives: [
+            t('courses.cloud.courses.course1.objectives.objective1'),
+            t('courses.cloud.courses.course1.objectives.objective2'),
+            t('courses.cloud.courses.course1.objectives.objective3'),
           ],
           project: '/project#ARCL',
+          button: t('courses.cloud.courses.course1.project'),
         },
         {
-          name: 'CONT : Containerization',
+          name: t('courses.cloud.courses.course2.title'),
           teacher: [{
-            name: 'Nicolas Drouin',
-            role: 'Global Cloud Security Architect at Pluxee',
-          },
-          {
-            name: 'Lucas Boisserie',
-            role: 'Lead Senior SRE at Jump',
+            name: t('courses.cloud.courses.course2.teachers.teacher1.name'),
+            role: t('courses.cloud.courses.course2.teachers.teacher1.role'),
+          }, {
+            name: t('courses.cloud.courses.course2.teachers.teacher2.name'),
+            role: t('courses.cloud.courses.course2.teachers.teacher2.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Understand container technology and architecture',
-            'Discover the good practices of containers and their ecosystem',
-            'Know how to use and integrate containers in a continuous integration and deployment chain'
+          obj: t('courses.cloud.courses.course2.objectives.title'),
+          objectives: [
+            t('courses.cloud.courses.course2.objectives.objective1'),
+            t('courses.cloud.courses.course2.objectives.objective2'),
+            t('courses.cloud.courses.course2.objectives.objective3'),
           ],
         },
         {
-          name: 'DATA : Data',
+          name: t('courses.cloud.courses.course3.title'),
           teacher: [{
-            name: 'Franck Brechet',
-            role: 'Partner | Tasmane',
+            name: t('courses.cloud.courses.course3.teachers.teacher1.name'),
+            role: t('courses.cloud.courses.course3.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Understand the typologies of data, current uses and new uses',
-            'Discover the Master data management',
-            'Secure the Data',
-            'Organization of the company around the data'
+          obj: t('courses.cloud.courses.course3.objectives.title'),
+          objectives: [
+            t('courses.cloud.courses.course3.objectives.objective1'),
+            t('courses.cloud.courses.course3.objectives.objective2'),
+            t('courses.cloud.courses.course3.objectives.objective3'),
+            t('courses.cloud.courses.course3.objectives.objective4'),
           ],
         },
         {
-          name: 'SOAR : Solution Architecture',
+          name: t('courses.cloud.courses.course4.title'),
           teacher: [{
-            name: 'Frédéric Fourdrinier',
-            role: 'Director World Wide Hybrid Cloud Practice | Hewlett Packard Enterprise',
-          },
-          {
-            name: 'Yannick Neff',
-            role: 'Group Cloud & Infrastructure Director | SUEZ',
+            name: t('courses.cloud.courses.course4.teachers.teacher1.name'),
+            role: t('courses.cloud.courses.course4.teachers.teacher1.role'),
+          }, {
+            name: t('courses.cloud.courses.course4.teachers.teacher2.name'),
+            role: t('courses.cloud.courses.course4.teachers.teacher2.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Understand and practice the implementation of a Solution Architecture',
-            'Understand key components of infrastructure'
+          obj: t('courses.cloud.courses.course4.objectives.title'),
+          objectives: [
+            t('courses.cloud.courses.course4.objectives.objective1'),
+            t('courses.cloud.courses.course4.objectives.objective2'),
           ],
         },
         {
-          name: 'IS Urbanization',
+          name: t('courses.cloud.courses.course5.title'),
           teacher: [{
-            name: 'Jean-Christophe Ferry',
-            role: 'Owner & Co-founder | ENIOKA',
+            name: t('courses.cloud.courses.course5.teachers.teacher1.name'),
+            role: t('courses.cloud.courses.course5.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Discover Information Systems reality in a company',
-            'Understand Middleware base that supports it',
-            'Understanding Integration issues within the Information System',
-            'Grasp the concept of innovation within the IS'
+          obj: t('courses.cloud.courses.course5.objectives.title'),
+          objectives: [
+            t('courses.cloud.courses.course5.objectives.objective1'),
+            t('courses.cloud.courses.course5.objectives.objective2'),
+            t('courses.cloud.courses.course5.objectives.objective3'),
+            t('courses.cloud.courses.course5.objectives.objective4'),
           ],
           project: '/project#UBSI',
+          button: t('courses.cloud.courses.course5.project'),
         },
       ],
     },
   
     {
-      title: 'Mobility & Applications',
+      title: t('courses.mobility.title'),
       courses: [
         {
-          name: 'ACOO : Object-Oriented Analysis and Design',
+          name: t('courses.mobility.courses.course1.title'),
           teacher: [{
-            name: 'Robin Duval',
-            role: 'Agile Coach | Groupe Renault',
+            name: t('courses.mobility.courses.course1.teachers.teacher1.name'),
+            role: t('courses.mobility.courses.course1.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Toolbox for other SIGL courses',
-            'Business integration',
-            'Learn key concepts of UML and Object-oriented development',
-            'Practice several conception approaches'
+          obj: t('courses.mobility.courses.course1.objectives.title'),
+          objectives: [
+            t('courses.mobility.courses.course1.objectives.objective1'),
+            t('courses.mobility.courses.course1.objectives.objective2'),
+            t('courses.mobility.courses.course1.objectives.objective3'),
+            t('courses.mobility.courses.course1.objectives.objective4'),
           ],
           project: '/project#ACOO',
+          button: t('courses.mobility.courses.course1.project'),
         },
         {
-          name: 'DEVO : DevOps',
+          name: t('courses.mobility.courses.course2.title'),
           teacher: [{
-            name: 'Lucas Boisserie',
-            role: 'DevOps Consultant | Octo Technology',
+            name: t('courses.mobility.courses.course2.teachers.teacher1.name'),
+            role: t('courses.mobility.courses.course2.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Understand DevOps added value against classical development methods',
-            'Understand the DevOps transformation within a project'
+          obj: t('courses.mobility.courses.course2.objectives.title'),
+          objectives: [
+            t('courses.mobility.courses.course2.objectives.objective1'),
+            t('courses.mobility.courses.course2.objectives.objective2'),
           ],
         },
         {
-          name: 'DSO : DevSecOps',
+          name: t('courses.mobility.courses.course3.title'),
           teacher: [{
-            name: 'Nicolas Drouin',
-            role: 'Global Cloud Security Architect at Pluxee',
+            name: t('courses.mobility.courses.course3.teachers.teacher1.name'),
+            role: t('courses.mobility.courses.course3.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Understand the concepts and areas of security within an information system',
-            'Define a safety approach in a plan project technical and organizational',
-            'Understand new security paradigms in cloud and container architectures'
+          obj: t('courses.mobility.courses.course3.objectives.title'),
+          objectives: [
+            t('courses.mobility.courses.course3.objectives.objective1'),
+            t('courses.mobility.courses.course3.objectives.objective2'),
+            t('courses.mobility.courses.course3.objectives.objective3'),
           ],
         },
         {
-          name: 'Agile Methodology',
+          name: t('courses.mobility.courses.course4.title'),
           teacher: [{
-            name: 'Robin Duval',
-            role: 'Agile Coach | Groupe Renault',
+            name: t('courses.mobility.courses.course4.teachers.teacher1.name'),
+            role: t('courses.mobility.courses.course4.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['General concepts of development productivity\'s issues',
-            'Experiment tools associated with Agile\'s planning and development methods',
-            'Face issues such as repriorization and silver bullet'
+          obj: t('courses.mobility.courses.course4.objectives.title'),
+          objectives: [
+            t('courses.mobility.courses.course4.objectives.objective1'),
+            t('courses.mobility.courses.course4.objectives.objective2'),
+            t('courses.mobility.courses.course4.objectives.objective3'),
           ],
           project: '/project#MEPA',
+          button: t('courses.mobility.courses.course4.project'),
         },
         {
-          name: 'NLPF : New Programming Languages & Frameworks',
+          name: t('courses.mobility.courses.course5.title'),
           teacher: [{
-            name: 'Robin Duval',
-            role: 'Agile Coach | Groupe Renault',
+            name: t('courses.mobility.courses.course5.teachers.teacher1.name'),
+            role: t('courses.mobility.courses.course5.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Have a culture of new languages and frameworks',
-            'Integration in a company',
-            'Carry out a comparison and analysis process'
+          obj: t('courses.mobility.courses.course5.objectives.title'),
+          objectives: [
+            t('courses.mobility.courses.course5.objectives.objective1'),
+            t('courses.mobility.courses.course5.objectives.objective2'),
+            t('courses.mobility.courses.course5.objectives.objective3'),
           ],
         },
         {
-          name: 'SOCRA : Software Architecture',
+          name: t('courses.mobility.courses.course6.title'),
           teacher: [{
-            name: 'Lucas Boisserie',
-            role: 'DevOps Consultant | Octo Technology',
-          },
-          { 
-            name: 'Florent Fauchille',
-            role: 'Software Engineer | bettermarks GmbH',
+            name: t('courses.mobility.courses.course6.teachers.teacher1.name'),
+            role: t('courses.mobility.courses.course6.teachers.teacher1.role'),
+          }, {
+            name: t('courses.mobility.courses.course6.teachers.teacher2.name'),
+            role: t('courses.mobility.courses.course6.teachers.teacher2.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Acquire key concepts and principles of Software Architecture',
-            'To put the architecture and the architect into the organization',
-            'Know how to analyze the relevance of software technologies for needs',
+          obj: t('courses.mobility.courses.course6.objectives.title'),
+          objectives: [
+            t('courses.mobility.courses.course6.objectives.objective1'),
+            t('courses.mobility.courses.course6.objectives.objective2'),
+            t('courses.mobility.courses.course6.objectives.objective3'),
           ],
           project: '/project#SOCRA',
+          button: t('courses.mobility.courses.course6.project'),
         },
       ],
     },
   
     {
-      title: 'Digitalization & Transformation',
+      title: t('courses.digitalization.title'),
       courses: [
         {
-          name: 'ACCC : Management of Change',
+          name: t('courses.digitalization.courses.course1.title'),
           teacher: [{
-            name: 'Jérémy Gredat',
-            role: 'Olivier Girard\'s Chief of Staff | Accenture France',
+            name: t('courses.digitalization.courses.course1.teachers.teacher1.name'),
+            role: t('courses.digitalization.courses.course1.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Understad what\'s at stake during a transformation',
-            'Learn key notions of Change Management'
+          obj: t('courses.digitalization.courses.course1.objectives.title'),
+          objectives: [
+            t('courses.digitalization.courses.course1.objectives.objective1'),
+            t('courses.digitalization.courses.course1.objectives.objective2'),
           ],
         },
         {
-          name: 'INNO : Innovation',
+          name: t('courses.digitalization.courses.course2.title'),
           teacher: [{
-            name: 'Antoine Tallon',
-            role: 'Talent & leadership consulting | Korn Ferry',
+            name: t('courses.digitalization.courses.course2.teachers.teacher1.name'),
+            role: t('courses.digitalization.courses.course2.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Use creative and innovative methods for problem solving',
-            'Apply method to study cases'
+          obj: t('courses.digitalization.courses.course2.objectives.title'),
+          objectives: [
+            t('courses.digitalization.courses.course2.objectives.objective1'),
+            t('courses.digitalization.courses.course2.objectives.objective2'),
           ],
         },
         {
-          name: 'METH : Methods',
+          name: t('courses.digitalization.courses.course3.title'),
           teacher: [{
-            name: 'Hervé Durand',
-            role: 'Head of Digital Foundry | Airbus',
+            name: t('courses.digitalization.courses.course3.teachers.teacher1.name'),
+            role: t('courses.digitalization.courses.course3.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Learn and practice several development and project management methods',
-            'Discover conceptual models and their applications in a business context',
-            'Take part in simulations'
+          obj: t('courses.digitalization.courses.course3.objectives.title'),
+          objectives: [
+            t('courses.digitalization.courses.course3.objectives.objective1'),
+            t('courses.digitalization.courses.course3.objectives.objective2'),
+            t('courses.digitalization.courses.course3.objectives.objective3'),
           ],
         },
         {
-          name: 'PIT : IT Perspectives',
+          name: t('courses.digitalization.courses.course4.title'),
           teacher: [{
-            name: 'Frédéric Fourdrinier',
-            role: 'Director World Wide Hybrid Cloud Practice | Hewlett Packard Enterprise',
-          },
-          {
-            name: 'Hervé Durand',
-            role: 'Head of Digital Foundry | Airbus',
+            name: t('courses.digitalization.courses.course4.teachers.teacher1.name'),
+            role: t('courses.digitalization.courses.course4.teachers.teacher1.role'),
+          }, {
+            name: t('courses.digitalization.courses.course4.teachers.teacher2.name'),
+            role: t('courses.digitalization.courses.course4.teachers.teacher2.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Undestand and control the evolution of the IT market',
-            'Solve an enterprise problem by designing and creating an IoT solution',
-            'Develop synthesis, analysis and innovation skills'
+          obj: t('courses.digitalization.courses.course4.objectives.title'),
+          objectives: [
+            t('courses.digitalization.courses.course4.objectives.objective1'),
+            t('courses.digitalization.courses.course4.objectives.objective2'),
+            t('courses.digitalization.courses.course4.objectives.objective3'),
           ],
           project: '/project#PIT',
+          button: t('courses.digitalization.courses.course4.project'),
         },
         {
-          name: 'PMDE : Project : Operating Instructions',
+          name: t('courses.digitalization.courses.course5.title'),
           teacher: [{
-            name: 'Yassine Chertouk',
-            role: 'Product manager | Fintech Blockchain',
+            name: t('courses.digitalization.courses.course5.teachers.teacher1.name'),
+            role: t('courses.digitalization.courses.course5.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Learn how to approach issues using dichotomy',
-            'Identify concrete solutions',
-            'Deliver counsel mission',
+          obj: t('courses.digitalization.courses.course5.objectives.title'),
+          objectives: [
+            t('courses.digitalization.courses.course5.objectives.objective1'),
+            t('courses.digitalization.courses.course5.objectives.objective2'),
+            t('courses.digitalization.courses.course5.objectives.objective3'),
           ],
         },
         {
-          name: 'SDI : Sustainability Driven Innovation',
+          name: t('courses.digitalization.courses.course6.title'),
           teacher: [{
-            name: 'Julien Guisset',
-            role: 'Co-founder & Manager | EXALT',
+            name: t('courses.digitalization.courses.course6.teachers.teacher1.name'),
+            role: t('courses.digitalization.courses.course6.teachers.teacher1.role'),
           }],
-          obj : 'Objectives',
-          objectives: ['Integrate the reality principle into the world we are living in and the awareness for the issues our planet is facing : climate deregulation, peak oil, ressources depletion...',
-            'Promote a transition toward a low carbon economy and the possibility to act individually or collectively in the context of IT profession',
-            'Make it easier to take action in IT: apply a Sustainability-Driven software development approach to Product management, front / back development, and Infrastructure operation',
+          obj: t('courses.digitalization.courses.course6.objectives.title'),
+          objectives: [
+            t('courses.digitalization.courses.course6.objectives.objective1'),
+            t('courses.digitalization.courses.course6.objectives.objective2'),
+            t('courses.digitalization.courses.course6.objectives.objective3'),
           ],
         },
       ],
     },
 ];
+
+  return (
+    <div className="mt-10 space-y-20">
+            {moduleList.map((group, index) => (
+              <FadeIn key={index}>
+                <Border className="grid grid-cols-1 gap-x-8 gap-y-8 pt-16">
+                  <div className="grid grid-cols-1 gap-6 lg:grid-cols-1 xl:gap-8">
+                    <FadeIn>
+                      <h2 className="font-display text-2xl font-semibold text-[#38598F]">
+                        {group.title}
+                      </h2>
+                    </FadeIn>
+                    <div className="lg:col-span-3">
+                        {group.courses.map((course, index) => (
+                          <div key={index}>
+                            <Accordion>
+                              <AccordionSummary
+                                expandIcon={<ArrowDropDownIcon />}
+                                aria-controls="panel2-content"
+                                id="panel2-header"
+                                className='p-4 bg-[#F0F4F8] rounded-lg'
+                              >
+                                <Typography className='text-[#38598F] font-semibold text-lg'>{course.name}</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails className='bg-[#F0F4F8]'>
+                                {course.teacher.map((teacher, index) => (
+                                  <div key={index} className='mb-7'>
+                                    <span className='text-lg text-[#1E3C63]'>{teacher.name}</span>
+                                    <br />
+                                    <span className='text-sm text-black'>{teacher.role}</span>
+                                  </div>
+                                ))}
+                                <div className='flex'>
+                                  <div>
+                                    <span className='text-lg text-[#1E3C63]'>{course.obj}</span>
+                                    {course.objectives.map((objective, index) => (
+                                        <li key={index} className="text-base text-black">{objective}</li>
+                                    ))}
+                                  </div>
+                                </div>
+                                <div className='flex justify-end'>
+                                    {course.project && (
+                                      <Button href={course.project}>
+                                        {course.button}
+                                      </Button>
+                                    )}
+                                </div>
+                              </AccordionDetails>
+                            </Accordion>
+                          </div>
+                          ))}
+                  </div>
+                </div>
+              </Border>
+            </FadeIn>
+          ))}
+        </div>
+  );
+}
