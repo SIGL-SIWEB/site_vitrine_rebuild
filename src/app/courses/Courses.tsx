@@ -9,14 +9,16 @@ import Typography from '@mui/material/Typography';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { moduleList } from '@/app/courses/ModuleList';
 import * as React from 'react';
+import { useTranslation } from 'react-i18next';
   
 export function CourseList() {
+  const { t } = useTranslation('fr', { useSuspense: false });
     return (
       <div>
         <Container className="mt-40">
           <FadeIn>
             <h2 className="font-display text-2xl font-semibold text-neutral-950">
-              Courses
+              {t('courses.subtitle')}
             </h2>
           </FadeIn>
           <div className="mt-10 space-y-20">
