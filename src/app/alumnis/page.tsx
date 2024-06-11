@@ -1,6 +1,5 @@
 import { PageIntro } from '@/app/components/PageIntro'
 import { AlumnisDisplay } from '@/app/alumnis/AlumnisDisplay'
-import promo2025 from '@/app/assets/alumnis/2025.jpg'
 import promo2024 from '@/app/assets/alumnis/2024.jpg'
 import promo2023 from '@/app/assets/alumnis/2023.jpg'
 import promo2019 from '@/app/assets/alumnis/2019.jpeg'
@@ -9,10 +8,6 @@ let alumnis = [{ image: promo2024, title: 'SIGL - 2024', names: ['Victor Crépin
                 },
                 { image: promo2023, title: 'SIGL - 2023', names: ['Aymerick Olivaux', 'Tanguy Le Henaff'], linkedinUrl: ['', ''], year: 2023,
                 },
-                // { image: promo2025, title: 'SIGL - 2022', names: ['Maelys Klos-david', 'Nathan Prats'], linkedinUrl: ['', ''], year: 2022,
-                // },
-                // { image: promo2025, title: 'SIGL - 2020', names: ['Jean Baptiste Rolland', 'Fernando Teixeira Borja Dos Santos'], linkedinUrl: ['', ''], year: 2020,
-                // },
                 { image: promo2019, title: 'SIGL - 2019', names: ['Anas Haloui', 'Mathieu Cornet'], linkedinUrl: ['', ''], year: 2019,
                 },
                ]
