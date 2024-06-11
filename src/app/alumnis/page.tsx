@@ -1,6 +1,8 @@
+'use client';
+
 import { PageIntro } from '@/app/components/PageIntro'
 import { AlumnisDisplay } from '@/app/alumnis/AlumnisDisplay'
-import promo2025 from '@/app/assets/alumnis/2025.jpg'
+import { useTranslation } from 'react-i18next'
 import promo2024 from '@/app/assets/alumnis/2024.jpg'
 import promo2023 from '@/app/assets/alumnis/2023.jpg'
 import promo2019 from '@/app/assets/alumnis/2019.jpeg'
@@ -18,11 +20,12 @@ let alumnis = [{ image: promo2024, title: 'SIGL - 2024', names: ['Victor Crépin
                ]
 
 export default function Alumnis() {
+  const { t } = useTranslation('fr', { useSuspense: false });
   return (
     <>
-      <PageIntro eyebrow="Alumnis - SIGL" title="Alumnis">
+      <PageIntro eyebrow={t('alumnis.header')} title={t('alumnis.title')}>
         <p>
-          Meet the graduates of the Information Systems and Software Engineering major, <a href=""></a>alumni who have successfully completed our program
+        {t('alumnis.description')}
         </p>
       </PageIntro>
 

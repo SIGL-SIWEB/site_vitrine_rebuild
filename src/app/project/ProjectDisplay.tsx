@@ -5,6 +5,7 @@ import { Border } from '@/app/components/Border';
 import { Container } from '@/app/components/Container';
 import { FadeIn } from '@/app/components/FadeIn';
 import Image, { StaticImageData } from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 export function ProjectDisplay({
   projects,
@@ -17,6 +18,7 @@ export function ProjectDisplay({
     summary: string[];
   }[];
 }) {
+  const { t } = useTranslation('fr', { useSuspense: false });
   const refs = useRef<{ [key: string]: HTMLParagraphElement | null }>({});
 
   useEffect(() => {
@@ -36,7 +38,7 @@ export function ProjectDisplay({
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Projects
+          {t('project.subtitle')}
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20">
