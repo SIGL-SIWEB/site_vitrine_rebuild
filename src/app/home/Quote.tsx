@@ -1,4 +1,4 @@
 export const alumnis = [
-    { name: 'Romain Villar', promotion: 2012, quote: 'La majeure SIGL m’a apporté la vision d’ensemble du SI ainsi que toutes les compétences nécessaires pour accompagner mes clients dans la construction de leur vision cible SI, au service de leurs métiers et en lien avec les standards de marché autour du cloud, de la data, de la cybersécurité, du sustainable, de l’innovation…' },
+    { name: 'Romain Villar', promotion: 2012, quote: 'The SIGL major gave me an overall view of IS, as well as all the skills needed to help my customers build their target IS vision, in line with their business and market standards around cloud, data, cybersecurity, sustainable development, innovation…' },
     { name: 'Peter Drucker', promotion: 2009, quote: 'The best way to predict the future is to create it' },
 ];

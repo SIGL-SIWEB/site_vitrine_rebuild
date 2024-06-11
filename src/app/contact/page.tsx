@@ -5,7 +5,7 @@ import { ContactForm } from '@/app/contact/ContactForm'
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Question / Answer">
+      <PageIntro eyebrow="Contact us" title="Question & Answer">
         <p></p>
       </PageIntro>
       <Container className="mt-12 sm:mt-16 lg:mt-20">
