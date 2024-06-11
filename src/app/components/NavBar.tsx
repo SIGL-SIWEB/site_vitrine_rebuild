@@ -14,19 +14,19 @@ interface NavigationItem {
   href: string;
 }
 
-const navigation: NavigationItem[] = [
-  { name: 'Home', href: '/' },
-  { name: 'Courses', href: '/courses' },
-  { name: 'Projects', href: '/project' },
-  { name: 'Alumnis', href: '/alumnis' },
-  { name: 'Contact', href: '/contact' },
-  { name: 'Intranet', href: 'https://intranet.sigl.epita.fr/' },
-];
-
 export function NavBar() {
   const { t } = useTranslation('fr', { useSuspense: false });
   const [isScroll, setScroll] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navigation: NavigationItem[] = [
+    { name: t('navbar.Home'), href: '/' },
+    { name: t('navbar.Courses'), href: '/courses' },
+    { name: t('navbar.Projects'), href: '/project' },
+    { name: t('navbar.Alumnis'), href: '/alumnis' },
+    { name: t('navbar.Contact'), href: '/contact' },
+    { name: t('navbar.Intranet'), href: 'https://intranet.sigl.epita.fr/' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {

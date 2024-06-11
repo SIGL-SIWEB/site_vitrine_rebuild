@@ -19,35 +19,36 @@ import disintegration from '@/app/assets/events/disintegration.jpg'
 
 import { useTranslation } from 'react-i18next'
 
-const images = [
-  {
-    id: 1,
-    titre: 'SIGL\'s 2023 End of year picture',
-    text: '',
-    imgPath: classe2023,
-  },
-  {
-    id: 2,
-    titre: 'Barbecue SIGL',
-    text: 'Maintain and renew the link with former students, and allow future engineers to exchange with those who preceded them: it is with this in mind that the SIGL BBQ is organized each year, bringing together teachers,\nformer students and future graduates',
-    imgPath: bbq,
-  },
-  {
-    id: 4,
-    titre: 'Laser Game',
-    text: 'Class representatives are taking the initiative to regulary organize some ecents within the major (cinema, laser game, etc.) in order to give students the opportunity to connect with each others beyond the professional environment',
-    imgPath: laser,
-  },
-  {
-    id: 5,
-    titre: 'SIGL\'s Disintegration',
-    text: 'In order to celebrate together the end of studies and the success of their year, a disintegration event is organized by the students at the end of their courses. Lastest destination is: Lisbon!',
-    imgPath: disintegration,
-  },
-];
-
 export function Event() {
   const { t } = useTranslation('fr', { useSuspense: false });
+
+  const images = [
+    {
+      id: 1,
+      titre: t('home.events.event1.title'),
+      text: t('home.events.event1.description'),
+      imgPath: classe2023,
+    },
+    {
+      id: 2,
+      titre: t('home.events.event2.title'),
+      text: t('home.events.event2.description'),
+      imgPath: bbq,
+    },
+    {
+      id: 4,
+      titre: t('home.events.event3.title'),
+      text: t('home.events.event3.description'),
+      imgPath: laser,
+    },
+    {
+      id: 5,
+      titre: t('home.events.event4.title'),
+      text: t('home.events.event4.description'),
+      imgPath: disintegration,
+    },
+  ];
+
   return (
     <div
       className={clsx(
