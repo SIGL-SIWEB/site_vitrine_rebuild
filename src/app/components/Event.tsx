@@ -17,6 +17,8 @@ import bbq from '@/app/assets/events/bbq.png'
 import laser from '@/app/assets/events/laser.png'
 import disintegration from '@/app/assets/events/disintegration.jpg'
 
+import { useTranslation } from 'react-i18next'
+
 const images = [
   {
     id: 1,
@@ -45,6 +47,7 @@ const images = [
 ];
 
 export function Event() {
+  const { t } = useTranslation('fr', { useSuspense: false });
   return (
     <div
       className={clsx(
@@ -52,7 +55,7 @@ export function Event() {
       )}
     >
       <SectionIntro
-          title="Our events"
+          title={t('home.events.title')}
           className="mt-24 sm:mt-32 lg:mt-40 mb-10"
         >
       </SectionIntro>

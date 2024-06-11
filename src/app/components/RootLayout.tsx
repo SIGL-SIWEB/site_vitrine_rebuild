@@ -10,14 +10,13 @@ import {
 import { usePathname } from 'next/navigation'
 import { motion, useReducedMotion } from 'framer-motion'
 
-import { Container } from '@/app/components/Container'
 import { Footer } from '@/app/components/Footer'
 import { GridPattern } from '@/app/components/GridPattern'
 import { NavBar } from '@/app/components/NavBar'
 
-import i18next from 'i18next';
+import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import Backend from 'i18next-http-backend';
+import HttpBackend from 'i18next-http-backend';
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -81,20 +80,22 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
 export function RootLayout({ children }: { children: React.ReactNode }) {
   let pathname = usePathname()
   let [logoHovered, setLogoHovered] = useState(false)
-  
-  i18next.use(initReactI18next)
-  .use(Backend)
+
+  i18n
+  .use(HttpBackend)
+  .use(initReactI18next)
   .init({
-    backend: {
-      loadPath: '/translations/{{lng}}.json',
-    },
     lng: 'fr',
-    fallbackLng: 'fr',
-    interpolation: {
-      escapeValue: false,
+    fallbackLng: 'en',
+    debug: true,
+    backend: {
+      loadPath: '/locales/{{lng}}.json'
     },
+    interpolation: {
+      escapeValue: false
+    }
   });
-  
+
   return (
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
       <RootLayoutInner key={pathname}>{children}</RootLayoutInner>

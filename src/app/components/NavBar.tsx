@@ -6,6 +6,8 @@ import { FaBars } from 'react-icons/fa6';
 import { RxCross2 } from "react-icons/rx";
 import Link from 'next/link'
 import sigl_image from '@/app/assets/logo/sigl.jpg'
+import { LanguageSwitcher } from '@/app/components/LanguageSwitcher';
+import { useTranslation  } from 'react-i18next';
 
 interface NavigationItem {
   name: string;
@@ -22,6 +24,7 @@ const navigation: NavigationItem[] = [
 ];
 
 export function NavBar() {
+  const { t } = useTranslation('fr', { useSuspense: false });
   const [isScroll, setScroll] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -61,10 +64,12 @@ export function NavBar() {
           </div>
           {isScroll && (
             <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-center xs:items-center text-white">
-              <strong>SIGL</strong>
+              <strong>{t('SIGL')}</strong>
             </div>
           )}
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end" />
+          <div className="lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end">
+            <LanguageSwitcher />
+          </div>
           <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end">
             <button
               type="button"

@@ -1,3 +1,5 @@
+'use client';
+
 import { Container } from '@/app/components/Container'
 import { SectionIntro } from '@/app/components/SectionIntro'
 import { FadeIn } from '@/app/components/FadeIn'
@@ -5,13 +7,15 @@ import { StylizedImage } from '@/app/components/StylizedImage'
 import { List, ListItem } from '@/app/components/List'
 import { Button } from '@/app/components/Button'
 import imageLaptop from '@/app/assets/shutterstock/laptop.jpg'
+import { useTranslation } from 'react-i18next'
 
 export function ProjectList() {
+    const { t } = useTranslation('fr', { useSuspense: false });
     return (
         <>
         <div id="projects">
             <SectionIntro
-            title="Our projects"
+            title={t('home.projects.title')}
             className="mt-24 sm:mt-32 lg:mt-40"
             >
             </SectionIntro>
@@ -27,21 +31,21 @@ export function ProjectList() {
                 </FadeIn>
                 </div>
                 <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-                <ListItem title="Cloud Architecture">
-                Creation of an hybrid cloud using Openstack technologies as well as PaaS ProjectList such as AWS or Microsoft Azure
+                <ListItem title={t('home.projects.project1.title')}>
+                    {t('home.projects.project1.description')}
                 </ListItem>
-                <ListItem title="IoT">
-                Creation of an IoT Object and build marketing & business processes (Business Case, Advertising) as well as the realization
+                <ListItem title={t('home.projects.project2.title')}>
+                {t('home.projects.project2.description')}
                 </ListItem>
-                <ListItem title="Practice & Experiment">
-                Group Project in partnership with several companies : Professional Relationships of EPITA, Capgemini, Deloitte Digital, SIGL, Cristal, Virtual Sports Traiding, GN
+                <ListItem title={t('home.projects.project3.title')}>
+                {t('home.projects.project3.description')}
                 </ListItem>
-                <ListItem title="IS Urbanization">
-                Creation of a reduced Information System simulating a Retail company's behavior
+                <ListItem title={t('home.projects.project4.title')}>
+                {t('home.projects.project4.description')}
                 </ListItem>
                 <ListItem>
                     <Button href="/project" invert>
-                    See more projects
+                    {t('home.projects.button')}
                     </Button>
                 </ListItem>
                 </List>

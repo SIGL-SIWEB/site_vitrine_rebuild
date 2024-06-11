@@ -38,19 +38,19 @@
     "projects": {
       "title": "Nos projets",
       "project1": {
-        "title": "Architecture Cloud.",
+        "title": "Architecture Cloud",
         "description": "Création d'un cloud hybride utilisant les technologies Openstack ainsi que les ProjectList PaaS comme AWS ou Microsoft Azure"
       },
       "project2": {
-        "title": "IoT.",
+        "title": "IoT",
         "description": "Création d'un objet IoT et mise en place de processus marketing et commerciaux (business case, publicité) ainsi que la réalisation"
       },
       "project3": {
-        "title": "Pratique et Expérimentation.",
+        "title": "Pratique et Expérimentation",
         "description": "Projet de groupe en partenariat avec plusieurs entreprises : Relations professionnelles de l'EPITA, Capgemini, Deloitte Digital, SIGL, Cristal, Virtual Sports Trading, GN"
       },
       "project4": {
-        "title": "Urbanisation des SI.",
+        "title": "Urbanisation des SI",
         "description": "Création d'un système d'information réduit simulant le comportement d'une entreprise de vente au détail"
       },
       "button": "Voir plus de projets"
@@ -82,7 +82,7 @@
       "multidisciplinary": {
         "title": "Multidisciplinaire",
         "job1": "Chef de projet",
-        "job2": "Ingénieur Méthodes/Qualité",
+        "job2": "Ingénieur Méthodes / Qualité",
         "job3": "Assistance Maîtrise d'ouvrage",
         "job4": "Developpeur Business"
       }

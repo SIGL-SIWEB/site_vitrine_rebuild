@@ -38,19 +38,19 @@
     "projects": {
       "title": "Our projects",
       "project1": {
-        "title": "Cloud Architecture.",
+        "title": "Cloud Architecture",
         "description": "Creation of an hybrid cloud using Openstack technologies as well as PaaS ProjectList such as AWS or Microsoft Azure"
       },
       "project2": {
-        "title": "IoT.",
+        "title": "IoT",
         "description": "Creation of an IoT Object and build marketing & business processes (Business Case, Advertising) as well as the realization"
       },
       "project3": {
-        "title": "Practice & Experiment.",
+        "title": "Practice & Experiment",
         "description": "Group Project in partnership with several companies : Professional Relationships of EPITA, Capgemini, Deloitte Digital, SIGL, Cristal, Virtual Sports Traiding, GN"
       },
       "project4": {
-        "title": "IS Urbanization.",
+        "title": "IS Urbanization",
         "description": "Creation of a reduced Information System simulating a Retail company's behavior"
       },
       "button": "See more projects"
@@ -80,7 +80,7 @@
         "job4": "IT Strategy Consultant"
       },
       "multidisciplinary": {
-        "title": "TechMultidisciplinarynical",
+        "title": "Multidisciplinary",
         "job1": "Project Leader",
         "job2": "QA Engineer",
         "job3": "Assistance to Mastery of Work",
