@@ -14,7 +14,7 @@ export function Footer() {
           <Image src={epita_image} alt="" className="w-20 h-auto" />
         </Link>
         <Link href="https://www.epita-alumni.org/fr/" aria-label="Home">
-          <Image src={alumnis_imagee} alt="" className="w-20 h-auto" />
+          <Image src={alumnis_image} alt="" className="w-20 h-auto" />
         </Link>
         <a href='https://x.com/SIGL_EPITA'><XIcon fontSize='large'/></a>
         <p className="text-sm text-neutral-700">
