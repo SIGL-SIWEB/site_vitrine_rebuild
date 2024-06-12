@@ -3,7 +3,7 @@ import { Container } from '@/app/components/Container'
 import Image from 'next/image'
 import XIcon from '@mui/icons-material/X';
 import epita_image from '@/app/assets/logo/epita.jpg'
-import alumnis_imagee from '@/app/assets/logo/alumnis.png'
+import alumnis_image from '@/app/assets/logo/alumnis.png'
 
 
 export function Footer() {
