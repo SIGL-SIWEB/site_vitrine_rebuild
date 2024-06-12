@@ -1,8 +1,6 @@
-import type { Metadata } from "next";
-
+import type { Metadata } from 'next';
 import { RootLayout } from '@/app/components/RootLayout';
-
-import "@/app/styles/globals.css";
+import '@/app/styles/globals.css';
 
 export const metadata: Metadata = {
   title: "SIGL",

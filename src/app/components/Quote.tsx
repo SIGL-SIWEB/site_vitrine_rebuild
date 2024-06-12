@@ -3,14 +3,20 @@
 import { Container } from '@/app/components/Container'
 import { FadeIn } from '@/app/components/FadeIn'
 import { GridPattern } from '@/app/components/GridPattern'
-import { alumnis } from '@/app/home/Quote'
 import { slider } from '@/app/components/Slider'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '@/app/styles/quote.css'
+import { useTranslation } from 'react-i18next'
 
 export function Quote() {
+  const { t } = useTranslation('fr', { useSuspense: false });
+
+  const alumnis = [
+    { name: 'Romain Villar', promotion: 2012, quote: t('home.quotes.villar') },
+    { name: 'Romain Villar', promotion: 2012, quote: t('home.quotes.villar') },
+  ];
   return (
     <div className='relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40'>
       <GridPattern

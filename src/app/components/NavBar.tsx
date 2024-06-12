@@ -6,24 +6,27 @@ import { FaBars } from 'react-icons/fa6';
 import { RxCross2 } from "react-icons/rx";
 import Link from 'next/link'
 import sigl_image from '@/app/assets/logo/sigl.jpg'
+import { LanguageSwitcher } from '@/app/components/LanguageSwitcher';
+import { useTranslation  } from 'react-i18next';
 
 interface NavigationItem {
   name: string;
   href: string;
 }
 
-const navigation: NavigationItem[] = [
-  { name: 'Home', href: '/' },
-  { name: 'Courses', href: '/courses' },
-  { name: 'Projects', href: '/project' },
-  { name: 'Alumnis', href: '/alumnis' },
-  { name: 'Contact', href: '/contact' },
-  { name: 'Intranet', href: 'https://intranet.sigl.epita.fr/' },
-];
-
 export function NavBar() {
+  const { t } = useTranslation('fr', { useSuspense: false });
   const [isScroll, setScroll] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navigation: NavigationItem[] = [
+    { name: t('navbar.Home'), href: '/' },
+    { name: t('navbar.Courses'), href: '/courses' },
+    { name: t('navbar.Projects'), href: '/project' },
+    { name: t('navbar.Alumnis'), href: '/alumnis' },
+    { name: t('navbar.Contact'), href: '/contact' },
+    { name: t('navbar.Intranet'), href: 'https://intranet.sigl.epita.fr/' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,11 +64,13 @@ export function NavBar() {
           </div>
           {isScroll && (
             <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-center xs:items-center text-white">
-              <strong>SIGL</strong>
+              <strong>{t('SIGL')}</strong>
             </div>
           )}
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end" />
-          <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end">
+          <div className="lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end">
+            <LanguageSwitcher />
+          </div>
+          <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end pl-4">
             <button
               type="button"
               className={`items-center justify-center rounded-md ${isScroll ? 'text-white' : 'text-gray-700'}`}

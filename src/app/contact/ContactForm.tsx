@@ -1,10 +1,13 @@
 'use client'
+
 import { useState } from 'react'
 import { Button } from '@/app/components/Button'
 import { FadeIn } from '@/app/components/FadeIn'
 import { TextInput } from '@/app/contact/TextInput'
+import { useTranslation } from 'react-i18next'
 
 export function ContactForm() {
+  const { t } = useTranslation('fr', { useSuspense: false });
   const emailToSend = 'siwebofficiel@gmail.com';
   
   const [formData, setFormData] = useState({
@@ -52,9 +55,9 @@ export function ContactForm() {
     <FadeIn className="lg:order-last">
       <form onSubmit={handleSubmit}>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" value={formData.name} onChange={handleChange} error={errors.name}/>
+          <TextInput label={t('contact.email.name')} name="name" autoComplete="name" value={formData.name} onChange={handleChange} error={errors.name}/>
           <TextInput
-            label="Email"
+            label={t('contact.email.email')}
             type="email"
             name="email"
             autoComplete="email"
@@ -62,10 +65,10 @@ export function ContactForm() {
             value={formData.email}
             onChange={handleChange}
           />
-          <TextInput label="Question" name="message" value={formData.message} onChange={handleChange} error={errors.message}/>
+          <TextInput label={t('contact.email.question')} name="message" value={formData.message} onChange={handleChange} error={errors.message}/>
         </div>
         <Button type="submit" className="mt-10">
-          Submit your question !
+          {t('contact.button')}
         </Button>
       </form>
     </FadeIn>

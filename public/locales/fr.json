@@ -1,0 +1,546 @@
+{
+  "SIGL": "SIGL",
+  "navbar": {
+    "Home": "Accueil",
+    "Courses": "Cours",
+    "Projects": "Projets",
+    "Alumnis": "Alumnis",
+    "Contact": "Contact",
+    "Intranet": "Intranet"
+  },
+  "home": {
+    "title": "Système d'Information & Génie Logiciel",
+    "description": "Aujourd'hui, les entreprises doivent développer des systèmes d'information et des logiciels complexes dont les caractéristiques principales sont leur capacité à évoluer, leur fiabilité ainsi que leur performance. Les exigences des entreprises évoluent encore plus rapidement avec l'apparition de nouveaux acteurs du marché et de modèles économiques disruptifs soutenus par la promesse de nouvelles technologies, encore plus connectées et moins chères que jamais. Il y a un besoin de technologies plus rapides pour transformer les systèmes existants et créer de nouveaux projets pour aujourd'hui et demain : présence en ligne, interconnexion avec tous les systèmes d'information, nouveaux projets en temps réel, meilleure compréhension des besoins des clients.",
+    "modules": {
+      "title": "Modules SIGL",
+      "description": "Afin de mieux préparer nos étudiants au monde des affaires, la spécialité SIGL est axée sur 4 grands thèmes, chacun apportant une partie des compétences et de la culture nécessaires pour construire les technologies de demain.",
+      "leadership": {
+        "title": "Leadership et Management",
+      "description": "Gérer les nouveaux modèles économiques afin de répondre aux nouveaux défis de la gouvernance informatique et former les managers de demain."
+      },
+      "cloud": {
+        "title": "Cloud et Architecture",
+      "description": "Comprendre le processus de construction et de fonctionnement des systèmes d'information ainsi que leur architecture technique. Découvrir les technologies Cloud et Big Data"
+      },
+      "mobility": {
+        "title": "Mobilité et Applications",
+      "description": "Découvrir et saisir les nouveaux défis logiciels pour les intégrer dans les exigences croissantes de mobilité"
+      },
+      "digitalization": {
+        "title": "Digitalisation et Transformation",
+      "description": "Comprendre et rendre viable la transformation numérique pour les entreprises ainsi que découvrir les nouveaux leviers d'innovation offerts par le secteur croissant de l'informatique"
+      }
+    },
+    "quotes": {
+      "villar": "La majeure SIGL m'a donné une vision globale des SI, ainsi que toutes les compétences nécessaires pour aider mes clients à construire leur vision cible des SI, en ligne avec leurs standards commerciaux et de marché autour du cloud, des données, de la cybersécurité, du développement durable, de l'innovation…",
+      "peter": "La meilleure façon de prédire l'avenir est de le créer"
+    },
+    "projects": {
+      "title": "Nos projets",
+      "project1": {
+        "title": "Architecture Cloud",
+        "description": "Création d'un cloud hybride utilisant les technologies Openstack ainsi que les ProjectList PaaS comme AWS ou Microsoft Azure"
+      },
+      "project2": {
+        "title": "IoT",
+        "description": "Création d'un objet IoT de la mise en place de stratégie marketing et commerciale (business case, benchmark, publicité) à la conception de l'objet"
+      },
+      "project3": {
+        "title": "Pratique et Expérimentation",
+        "description": "Projet de groupe en partenariat avec plusieurs entreprises : Relations professionnelles de l'EPITA, Capgemini, Deloitte Digital, SIGL, Cristal, Virtual Sports Trading, GN"
+      },
+      "project4": {
+        "title": "Urbanisation des SI",
+        "description": "Création d'un système d'information réduit simulant le comportement d'une entreprise de vente au détail"
+      },
+      "button": "Voir plus de projets"
+    },
+    "opportunities": {
+      "title": "Opportunités",
+      "description": "La majeure SIGL offre une large gamme d'opportunités de carrière dans divers domaines. Que vous aspiriez à être développeur, ingénieur d'affaires ou chef de projet, cette majeure vous fournit les compétences et les connaissances pour exceller dans des rôles techniques, commerciaux, organisationnels et multidisciplinaires.",
+      "technical": {
+        "title": "Technique",
+        "job1": "Développeur",
+        "job2": "Expert Spécialisé",
+        "job3": "Consultant Technique",
+        "job4": "Ingénieur Système",
+        "job5": "Chercheur"
+      },
+      "commercial": {
+        "title": "Commercial",
+        "job1": "Ingénieur d'affaires",
+        "job2": "Responsable de comptes",
+        "job3": "Ingénieur Avant-Vente"
+      },
+      "organizational": {
+        "title": "Organisationnel",
+        "job1": "Directeur informatique",
+        "job2": "Directeur de production",
+        "job3": "Consultant Organisationnel",
+        "job4": "Consultant Stratégie IT"
+      },
+      "multidisciplinary": {
+        "title": "Multidisciplinaire",
+        "job1": "Chef de projet",
+        "job2": "Ingénieur Méthodes / Qualité",
+        "job3": "Assistance Maîtrise d'ouvrage",
+        "job4": "Developpeur Business"
+      }
+    },
+    "events": {
+      "title": "Nos événements",
+      "event1": {
+        "title": "Photo de fin d'année SIGL 2023",
+        "description": ""
+      },
+      "event2": {
+        "title": "Barbecue SIGL",
+        "description": "Maintenir et renouveler le lien avec les anciens étudiants, et permettre aux futurs ingénieurs d'échanger avec ceux qui les ont précédés : c'est dans cet esprit que le barbecue SIGL est organisé chaque année, réunissant enseignants, anciens étudiants et futurs diplômés"
+      },
+      "event3": {
+        "title": "Laser Game",
+        "description": "Les délégués de la classe prennent l'initiative d'organiser régulièrement des événements au sein de la majeure (cinéma, laser game, etc.) afin de donner aux étudiants l'opportunité de se connecter les uns aux autres au-delà du cadre professionnel"
+      },
+      "event4": {
+        "title": "Désintégration SIGL",
+        "description": "Afin de célébrer ensemble la fin des études et le succès de leur année, un événement de désintégration est organisé par les étudiants à la fin de leurs cours. La dernière destination : Lisbonne !"
+      }
+    }
+  },
+  "courses": {
+    "header": "Cours - SIGL",
+    "title": "Modules SIGL ",
+    "subtitle": "Cours",
+    "description": "Explorez la liste complète des modules et cours proposés en SIGL. Organisé en quatre grandes catégories, ce catalogue couvre un large éventail de compétences essentielles pour former les ingénieurs de demain",
+    "leadership": {
+      "title": "Leadership et Management",
+      "courses": {
+        "course1": {
+          "title": "CEC : Coaching et communication",
+          "teachers": {
+            "teacher1": {
+              "name": "Christophe Andreu",
+              "role": "Coach d'entreprise / Consultant indépendant / Formateur | ACC"
+              }
+            },
+          "objectives": {
+            "title": "Objectifs",
+            "objective1": "Ateliers de coaching",
+            "objective2": "Ensemble de méthodologies pour mieux comprendre les différents aspects de la communication"
+          }
+        },
+        "course2": {
+          "title": "COIN : Communication interpersonnelle",
+          "teachers": {
+            "teacher1": {
+              "name": "Anne Dewilde",
+              "role": "Responsable du laboratoire d'innovation de l'EPITA | EPITA"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Apprendre à se connaître",
+            "objective2": "Développer son savoir-être",
+            "objective3": "Comprendre les concepts clés de la communication et du travail d'équipe"
+          }
+        },
+        "course3": {
+          "title": "MOAE : Maitrise d’ouvrage des SI",
+          "teachers": {
+            "teacher1": {
+              "name": "Guillaume Barbier",
+              "role": "Responsable de gestion de projet | Imerys"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Appréhender et comprendre le Système d'Information du point de vue de l'entreprise",
+            "objective2": "Identifier les rôles, missions et le positionnement de la MOA",
+            "objective3": "Déterminer les responsabilités respectives entre MOA et MOE",
+            "objective4": "Être capable de mener une étude organisationnelle pour les produits / services SI"
+          }
+        },
+        "course4": {
+          "title": "OPCO : Organisation personnelle et communication",
+          "teachers": {
+            "teacher1": {
+              "name": "Christophe Andreu",
+              "role": "Coach exécutif ICF PCC"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Être en mesure de gérer rationnellement son temps, d’appliquer efficacement son organisation personnelle et son mode de fonctionnement, afin d’accroître sa performance dans la réalisation des ses activités",
+            "objective2": "Être en mesure de renforcer son efficacité professionnelle par une meilleure qualité de sa communication tant écrite qu’orale",
+            "objective3": "Être capable, de conduire à bien son projet professionnel de concert avec sa vie privée"
+          }
+        },
+        "course5": {
+          "title": "OPDI : Organisation et pilotage d’une DSI",
+          "teachers": {
+            "teacher1": {
+              "name": "Laurence Jumeaux",
+              "role": "Vice-présidente Innovation technologique en affaires | Capgemini"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre l’impact du digital sur les organisations de la DSI",
+            "objective2": "Comment améliorer la performance d’une DSI",
+            "objective3": "Savoir bâtir la vision cible de la fonction informatique",
+            "objective4": "Évaluer le retour sur investissement des projets informatiques",
+            "objective5": "Comprendre les leviers de réduction de coûts au sein d’une DSI"
+          }
+        }
+      }
+    },
+    "cloud": {
+      "title": "Cloud et Architecture",
+      "courses": {
+        "course1": {
+          "title": "ARCL : Architecture Cloud",
+          "teachers": {
+            "teacher1": {
+              "name": "Yannick Neff",
+              "role": "Directeur du Groupe Cloud et de l'Infrastructure | SUEZ"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Valider les acquis d’une méthode d’architecture en concevant un Cloud et une application Cloud-Based",
+            "objective2": "Développer les connaissances autour d’un Cloud Computing",
+            "objective3": "Tester une solution de Cloud basée sur les technologies OpenSource ou propriétaires"
+          },
+          "project": "Voir le projet du cours"
+        },
+        "course2": {
+          "title": "CONT : Containerisation",
+          "teachers": {
+            "teacher1": {
+              "name": "Nicolas Drouin",
+              "role": "Architecte en Sécurité du Cloud Global chez Pluxee"
+              },
+            "teacher2": {
+              "name": "Lucas Boisserie",
+              "role": "Ingénieur Senior SRE chez Jump"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre la technologie des containers et son architecture",
+            "objective2": "Découvrir les bonnes pratiques des containers et leur écosystème",
+            "objective3": "Savoir utiliser et intégrer des containers dans une chaîne d'intégration et de déploiement continue"
+          }
+        },
+        "course3": {
+          "title": "DATA : Data",
+          "teachers": {
+            "teacher1": {
+              "name": "Franck Brechet",
+              "role": "Associé | Tasmane"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre la typologies des données, les usages courants et les nouveaux usages",
+            "objective2": "Découvrir le master data management",
+            "objective3": "Sécuriser la donnée",
+            "objective4": "Organisation de l’entreprise autour de la donnée"
+          }
+        },
+        "course4": {
+          "title": "SOAR : Solution Architecture",
+          "teachers": {
+            "teacher1": {
+              "name": "Frédéric Fourdrinier",
+              "role": "Directeur de la pratique du cloud hybride à l'échelle mondiale | Hewlett Packard Enterprise"
+              },
+            "teacher2": {
+              "name": "Yannick Neff",
+              "role": "Directeur du Groupe Cloud et de l'Infrastructure | SUEZ"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre et appliquer une démarche de solution architecture",
+            "objective2": "Comprendre les enjeux et composants de l’infrastructure"
+          }
+        },
+        "course5": {
+          "title": "UBSI : Urbanisation des SI",
+          "teachers": {
+            "teacher1": {
+              "name": "Jean-Christophe Ferry",
+              "role": "Président & Co-fondateur | ENIOKA"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Découvrir la réalité des systèmes d'information dans une entreprise",
+            "objective2": "Comprendre les bases du middleware qui le soutiennent",
+            "objective3": "Comprendre les enjeux de l'intégration dans le système d'information",
+            "objective4": "Saisir le concept d'innovation au sein des SI"
+          },
+          "project": "Voir le projet du cours"
+        }
+      }
+    },
+    "mobility": {
+      "title": "Mobilité et Applications",
+      "courses": {
+        "course1": {
+          "title": "ACOO : Analyse et Conception Orientées Objet",
+          "teachers": {
+            "teacher1": {
+              "name": "Robin Duval",
+              "role": "Coach Agile | Groupe Renault"
+              }
+            },
+          "objectives": {
+            "title": "Objectifs",
+            "objective1": "Boîte à outils pour les autres cours SIGL",
+            "objective2": "Intégration métier",
+            "objective3": "Apprendre les concepts clés de UML et du développement orienté objet",
+            "objective4": "Pratiquer plusieurs approches de conception"
+          },
+          "project": "Voir le projet du cours"
+        },
+        "course2": {
+          "title": "DEVO : DevOps",
+          "teachers": {
+            "teacher1": {
+              "name": "Lucas Boisserie",
+              "role": "Consultant DevOps | Octo Technology"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre la valeur ajoutée du DevOps par rapport aux méthodes de développement classiques",
+            "objective2": "Comprendre la transformation DevOps dans le cadre d'un projet"
+          }
+        },
+        "course3": {
+          "title": "DSO : DevSecOps",
+          "teachers": {
+            "teacher1": {
+              "name": "Nicolas Drouin",
+              "role": "Architecte Sécurité Cloud Global chez Pluxee"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre les concepts et les domaines de la sécurité dans un système d'information",
+            "objective2": "Définir une approche de sécurité dans un projet technique et organisationnel",
+            "objective3": "Comprendre les nouveaux paradigmes de sécurité dans les architectures cloud et conteneurs"
+          }
+        },
+        "course4": {
+          "title": "MEPA : Mise en pratique agile",
+          "teachers": {
+            "teacher1": {
+              "name": "Robin Duval",
+              "role": "Coach Agile | Groupe Renault"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Concepts généraux des problèmes de productivité du développement",
+            "objective2": "Expérimenter les outils associés à la planification agile et aux méthodes de développement",
+            "objective3": "Faire face à des problèmes tels que la repriorisation et le silver bullet"
+          },
+          "project": "Voir le projet du cours"
+        },
+        "course5": {
+          "title": "NLPF : Nouveaux Langages de Programmation & Frameworks",
+          "teachers": {
+            "teacher1": {
+              "name": "Robin Duval",
+              "role": "Coach Agile | Groupe Renault"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Avoir une culture des nouveaux langages et frameworks",
+            "objective2": "Intégration en entreprise",
+            "objective3": "Effectuer un processus de comparaison et d'analyse"
+          }
+        },
+        "course6": {
+          "title": "SOCRA : Architecture Logicielle",
+          "teachers": {
+            "teacher1": {
+              "name": "Lucas Boisserie",
+              "role": "Consultant DevOps | Octo Technology"
+              },
+            "teacher2": {
+              "name": "Florent Fauchille",
+              "role": "Ingénieur Logiciel | bettermarks GmbH"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Acquérir les concepts et principes clés de l'architecture logicielle",
+            "objective2": "Placer l'architecture et l'architecte dans l'organisation",
+            "objective3": "Savoir analyser la pertinence des technologies logicielles pour les besoins"
+          },
+          "project": "Voir le projet du cours"
+        }
+      }
+    },
+    "digitalization": {
+      "title": "Digitalisation et Transformation",
+      "courses": {
+        "course1": {
+          "title": "ACCC : Accompagnement au Changement",
+          "teachers": {
+            "teacher1": {
+              "name": "Jérémy Gredat",
+              "role": "Chef de Cabinet d'Olivier Girard | Accenture France"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre les enjeux lors d'une transformation",
+            "objective2": "Apprendre les notions clés de la gestion du changement"
+          }
+        },
+        "course2": {
+          "title": "INNO : Innovation",
+          "teachers": {
+            "teacher1": {
+              "name": "Antoine Tallon",
+              "role": "Consultant en talents et leadership | Korn Ferry"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Utiliser des méthodes créatives et innovantes pour résoudre des problèmes",
+            "objective2": "Appliquer des méthodes à des études de cas"
+          }
+        },
+        "course3": {
+          "title": "METH : Méthodes",
+          "teachers": {
+            "teacher1": {
+              "name": "Hervé Durand",
+              "role": "Responsable de la Fonderie Digitale | Airbus"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Apprendre et pratiquer plusieurs méthodes de développement et de gestion de projet",
+            "objective2": "Découvrir des modèles conceptuels et leurs applications dans un contexte professionnel",
+            "objective3": "Participer à des simulations"
+          }
+        },
+        "course4": {
+          "title": "PIT : Perspectives IT",
+          "teachers": {
+            "teacher1": {
+              "name": "Frédéric Fourdrinier",
+              "role": "Directeur World Wide Hybrid Cloud Practice | Hewlett Packard Enterprise"
+              },
+            "teacher2": {
+              "name": "Hervé Durand",
+              "role": "Responsable de la Fonderie Digitale | Airbus"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Comprendre et contrôler l'évolution du marché IT",
+            "objective2": "Résoudre un problème d'entreprise en concevant et en créant une solution IoT",
+            "objective3": "Développer des compétences de synthèse, d'analyse et d'innovation"
+          },
+          "project": "Voir le projet du cours"
+        },
+        "course5": {
+          "title": "PMDE : Projet : Mode d'Emploi",
+          "teachers": {
+            "teacher1": {
+              "name": "Yassine Chertouk",
+              "role": "Product manager | Fintech Blockchain"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Apprendre à aborder les problèmes en utilisant la dichotomie",
+            "objective2": "Identifier des solutions concrètes",
+            "objective3": "Réaliser une mission de conseil"
+          }
+        },
+        "course6": {
+          "title": "SDI : Innovation guidée par la durabilité",
+          "teachers": {
+            "teacher1": {
+              "name": "Julien Guisset",
+              "role": "Co-fondateur et Directeur | EXALT"
+              }
+            },
+          "objectives": {
+            "title": "Objectives",
+            "objective1": "Intégrer le principe de réalité dans le monde dans lequel nous vivons et la sensibilisation aux problèmes auxquels notre planète est confrontée : dérèglement climatique, pic pétrolier, épuisement des ressources...",
+            "objective2": "Promouvoir une transition vers une économie à faible émission de carbone et la possibilité d'agir individuellement ou collectivement dans le contexte de la profession informatique",
+            "objective3": "Faciliter l'action en informatique : appliquer une approche de développement logiciel guidée par la durabilité à la gestion de produit, au développement front / back et à l'exploitation de l'infrastructure"
+          }
+        }
+      }
+    }
+  },
+  "project": {
+    "header": "Projet - SIGL",
+    "title": "Solutions innovantes pour des défis pratiques",
+    "subtitle": "Projets",
+    "description": "Explorez notre gamme de projets conçus pour répondre aux défis du monde réel et repousser les limites de l'innovation technologique. De l'architecture cloud à la mise en œuvre de l'IoT, nous nous efforçons de fournir des solutions percutantes qui augmentent l'efficacité et la valeur.",
+    "acoo": {
+      "title": "Projet de conception d'objets",
+      "description": "À partir d'une spécification fournie par un cours, le projet consiste à créer une représentation objet d'une solution. Cela implique de comprendre en profondeur les exigences du cours, de conceptualiser la solution en une conception orientée objet."
+    },
+    "mepa": {
+      "title": "Mise en pratique agile",
+      "description": "Appliquer les meilleures pratiques de la méthodologie SCRUM dans un projet de groupe où les participants ont la liberté de choisir leurs rôles. Cela inclut la promotion d'un environnement où la communication régulière, le progrès itératif et l'amélioration continue sont valorisés. L'objectif est d'apprendre et de grandir en tant qu'équipe grâce à cette expérience."
+    },
+    "arcl": {
+      "title": "Architecture cloud",
+      "description": "Ce projet implique la création d'une infrastructure cloud hybride, utilisant les capacités avancées des technologies Openstack. Openstack, un ensemble d'outils logiciels pour créer et gérer des plateformes de cloud computing pour des clouds publics et privés, est au cœur de cette opération. En complément d'Openstack, nous utiliserons également des services de plateforme en tant que service (PaaS) de fournisseurs de services cloud renommés tels qu'Amazon Web Services (AWS) et Microsoft Azure. Ces plateformes offrent une variété de services, y compris la puissance de calcul et le stockage, qui sont fondamentaux pour le bon fonctionnement du cloud hybride."
+    },
+    "desit": {
+      "title": "Design Thinking",
+      "description": "Cette activité est un exercice pratique axé sur le concept d'innovation, au cours duquel nous aurons l'opportunité de collaborer avec des étudiants de MTI. Le but de cet exercice est de mieux comprendre les processus d'innovation en participant activement et en contribuant nos propres idées. C'est une occasion merveilleuse d'apprendre et de comprendre leurs processus créatifs, et de voir comment différentes perspectives peuvent conduire à des idées vraiment exceptionnelles."
+    },
+    "pit": {
+      "title": "IoT",
+      "description": "Le projet consiste à créer un objet Internet des Objets (IoT). Cette tâche ne se limite pas à la création physique et à la programmation de l'objet, mais comprend également le développement de processus marketing et commerciaux. En termes de processus commerciaux, il faut créer un business case. Cela impliquera une analyse approfondie du marché, une description détaillée de la proposition de vente unique du produit et une prévision financière complète. En parallèle, une stratégie publicitaire doit être développée. Cette stratégie devra communiquer efficacement les avantages du produit à son public cible et utiliser les plateformes et les médias les plus efficaces pour atteindre ce public. Enfin, le projet consistera à réaliser concrètement ces plans, transformant concepts et stratégies en actions et résultats tangibles."
+    },
+    "pae": {
+      "title": "Pratique et Expérimentation",
+      "description": "Le projet de groupe est un effort collaboratif impliquant une multitude d'entreprises. Nous avons la chance d'être partenaires avec diverses entreprises, y compris les Relations Professionnelles de l'EPITA, une institution renommée pour ses partenariats professionnels robustes. Nous avons également le privilège de travailler avec Capgemini, un leader mondial dans les services de conseil, de technologie et de transformation numérique. D'autres partenariats significatifs incluent Deloitte Digital, une entreprise de conseil numérique de renommée mondiale."
+    },
+    "pms": {
+      "title": "Projet multi-spécialité",
+      "description": "Dans le programme SIGL, les étudiants spécialisés en Sécurité et Réseau collaborent pour concevoir des solutions de transformation complètes applicables à des contextes réels. Cette collaboration se déroule sous forme de projet de classe, conçu pour fournir aux étudiants une compréhension approfondie de tous les aspects possibles de l'architecture des systèmes d'information. Le projet renforce non seulement leurs connaissances théoriques, mais leur donne également une exposition pratique, les préparant ainsi à leurs futures carrières dans le domaine."
+    },
+    "ubsi": {
+      "title": "Urbanisation des SI",
+      "description": "L'objectif est de concevoir et de développer un système d'information rationalisé qui reproduit efficacement les opérations et le comportement d'une entreprise de vente au détail. Ce système répliquera les différentes zones fonctionnelles d'une entreprise de vente au détail typique, fournissant une plateforme complète pour comprendre et analyser les interactions et dépendances au sein d'une telle organisation."
+    },
+    "socra": {
+      "title": "Technologies Web",
+      "description": "Nous nous engageons dans la réalisation de divers projets web, chacun étant méticuleusement développé en utilisant une technologie web moderne choisie. Les technologies que nous utilisons vont de Ruby on Rails (RoR) à Javascript, un incontournable du développement web pour créer des éléments web interactifs. Nous utilisons également Golang, un langage compilé statiquement typé connu pour sa scalabilité. Notre répertoire technologique diversifié nous permet de répondre de manière optimale aux exigences uniques de chaque projet."
+    }
+  },
+  "alumnis": {
+    "header": "Alumnis - SIGL",
+    "title": "Alumnis",
+    "description": "Rencontrez les diplômés de la majeure Systèmes d'Information et Génie Logiciel, des anciens élèves qui ont terminé avec succès notre programme."
+  },
+  "contact": {
+    "header": "Contactez-nous",
+    "title": "Question & Réponse",
+    "email":  {
+      "name": "Nom",
+      "email": "Email",
+      "question": "Question"
+    },
+    "button": "Soumettez votre question !"
+  }
+}

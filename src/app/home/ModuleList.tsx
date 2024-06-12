@@ -1,17 +1,21 @@
+'use client';
+
 import { Container } from '@/app/components/Container'
 import { SectionIntro } from '@/app/components/SectionIntro'
 import { FadeIn, FadeInStagger } from '@/app/components/FadeIn'
+import { useTranslation } from 'react-i18next'
 
 export function ModuleList() {
+  const { t } = useTranslation('fr', { useSuspense: false });
   return (
     <>
       <div id="modules">
         <SectionIntro
-          title="SIGL Modules"
+          title={t('home.modules.title')}
           className="mt-24 sm:mt-32 lg:mt-40"
         >
           <p>
-          In order to better prepare our students for the business community, SIGL specialty is focused on 4 major topics, every one of which bringing a part of the skills and culture required in order to build tomorrow's technologies.
+          {t('home.modules.description')}
           </p>
         </SectionIntro>
         <Container className="mt-16">
@@ -19,11 +23,11 @@ export function ModuleList() {
               <FadeIn className="flex">
                 <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                   <h3>
-                  <strong className='text-darkblue'>Leadership and Management</strong>
+                  <strong className='text-darkblue'>{t('home.modules.leadership.title')}</strong>
                   </h3>
 
                   <p className="mt-4 text-base text-neutral-600">
-                  Handling the new business models in order to answer the IT governance's new challenges and train tomorrow's managers
+                    {t('home.modules.leadership.description')}
                   </p>
                 </article>
               </FadeIn>
@@ -31,11 +35,11 @@ export function ModuleList() {
               <FadeIn className="flex">
                 <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                   <h3>
-                  <strong className='text-darkblue'>Cloud and Architecture</strong>
+                  <strong className='text-darkblue'>{t('home.modules.cloud.title')}</strong>
                   </h3>
 
                   <p className="mt-4 text-base text-neutral-600">
-                  Understanding the building and functioning process of Information Systems as well as its technical architecture. Discovering Cloud technologies and Big Data
+                  {t('home.modules.cloud.description')}
                   </p>
                 </article>
               </FadeIn>
@@ -43,11 +47,11 @@ export function ModuleList() {
               <FadeIn className="flex">
                 <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                   <h3>
-                  <strong className='text-darkblue'>Mobility and Applications</strong>
+                  <strong className='text-darkblue'>{t('home.modules.mobility.title')}</strong>
                   </h3>
 
                   <p className="mt-4 text-base text-neutral-600">
-                  Discover and grasp the new software challenges in order to integrate it in growing mobility requirements
+                    {t('home.modules.mobility.description')}
                   </p>
                 </article>
               </FadeIn>
@@ -55,11 +59,11 @@ export function ModuleList() {
               <FadeIn className="flex">
                 <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                   <h3>
-                  <strong className='text-darkblue'>Digitalization and Transformation</strong>
+                  <strong className='text-darkblue'>{t('home.modules.digitalization.title')}</strong>
                   </h3>
 
                   <p className="mt-4 text-base text-neutral-600">
-                  Understanding and make Digital Transformation viable for companies as well as discovering the new innovation levers provided by the growing sector of IT business
+                    {t('home.modules.digitalization.description')}
                   </p>
                 </article>
               </FadeIn>
