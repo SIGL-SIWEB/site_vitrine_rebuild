@@ -72,8 +72,8 @@ export function Event() {
                   <div key={image.id}>
                     <Image src={image.imgPath} alt=""/>
                     <div className="overlay">
-                      <h2 className='overlay-title'>{image.titre}</h2>
-                      <p>{image.text}</p>
+                      <h2 className='overlay-title lg:text-2xl md:text-2xl sm:text-lg xs:text-lg'>{image.titre}</h2>
+                      <p className='xs:hidden lg:flex sm:flex md:flex sm:text-base md:text-base lg:text-lg'>{image.text}</p>
                     </div>
                   </div>
                 ))}
