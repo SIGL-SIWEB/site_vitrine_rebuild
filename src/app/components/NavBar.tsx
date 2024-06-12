@@ -70,7 +70,7 @@ export function NavBar() {
           <div className="lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end">
             <LanguageSwitcher />
           </div>
-          <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end">
+          <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end pl-4">
             <button
               type="button"
               className={`items-center justify-center rounded-md ${isScroll ? 'text-white' : 'text-gray-700'}`}
