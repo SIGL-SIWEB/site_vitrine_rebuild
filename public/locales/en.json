@@ -267,7 +267,7 @@
           }
         },
         "course5": {
-          "title": "IS Urbanization",
+          "title": "UBSI : IS Urbanization",
           "teachers": {
             "teacher1": {
               "name": "Jean-Christophe Ferry",
@@ -293,7 +293,7 @@
           "teachers": {
             "teacher1": {
               "name": "Robin Duval",
-              "role": "Agile Coach | Groupe Renault"
+              "role": "Agile Coach | Renault Group"
               }
             },
           "objectives": {
@@ -335,11 +335,11 @@
           }
         },
         "course4": {
-          "title": "Agile Methodology",
+          "title": "MEPA : Agile Methodology",
           "teachers": {
             "teacher1": {
               "name": "Robin Duval",
-              "role": "Agile Coach | Groupe Renault"
+              "role": "Agile Coach | Renault Group"
               }
             },
           "objectives": {
@@ -355,7 +355,7 @@
           "teachers": {
             "teacher1": {
               "name": "Robin Duval",
-              "role": "Agile Coach | Groupe Renault"
+              "role": "Agile Coach | Renault Group"
               }
             },
           "objectives": {
