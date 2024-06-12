@@ -5,7 +5,6 @@ import XIcon from '@mui/icons-material/X';
 import epita_image from '@/app/assets/logo/epita.jpg'
 import alumnis_image from '@/app/assets/logo/alumnis.png'
 
-
 export function Footer() {
   return (
     <Container as="footer" className="w-full">
