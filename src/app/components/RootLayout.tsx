@@ -7,47 +7,22 @@ import {
   useRef,
   useState,
 } from 'react'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, useReducedMotion } from 'framer-motion'
 
-import { Container } from '@/app/components/Container'
 import { Footer } from '@/app/components/Footer'
 import { GridPattern } from '@/app/components/GridPattern'
 import { NavBar } from '@/app/components/NavBar'
+
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import HttpBackend from 'i18next-http-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
   setLogoHovered: React.Dispatch<React.SetStateAction<boolean>>
 } | null>(null)
-
-function NavigationRow({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="even:mt-px sm:bg-[#00182e]">
-      <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
-      </Container>
-    </div>
-  )
-}
-
-function NavigationItem({
-  href,
-  children,
-}: {
-  href: string
-  children: React.ReactNode
-}) {
-  return (
-    <Link
-      href={href}
-      className="group relative isolate -mx-6 bg-[#00182e] px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
-    >
-      {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-[#3864A6] opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
-    </Link>
-  )
-}
 
 function RootLayoutInner({ children }: { children: React.ReactNode }) {
   let panelId = useId()
@@ -106,6 +81,21 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
 export function RootLayout({ children }: { children: React.ReactNode }) {
   let pathname = usePathname()
   let [logoHovered, setLogoHovered] = useState(false)
+
+  i18n
+  .use(HttpBackend)
+  .use(initReactI18next)
+  .use(LanguageDetector)
+  .init({
+    lng: 'fr',
+    fallbackLng: 'en',
+    backend: {
+      loadPath: '/locales/{{lng}}.json'
+    },
+    interpolation: {
+      escapeValue: false
+    }
+  });
 
   return (
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
