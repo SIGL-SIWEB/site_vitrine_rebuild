@@ -10,7 +10,7 @@
   },
   "home": {
     "title": "Système d'Information & Génie Logiciel",
-    "description": "Aujourd'hui, les entreprises doivent développer des systèmes d'information et des logiciels complexes dont les caractéristiques principales sont leur capacité à évoluer, leur fiabilité ainsi que leur performance. Les exigences des entreprises évoluent encore plus rapidement avec l'apparition de nouveaux acteurs du marché et de modèles économiques disruptifs soutenus par la promesse de nouvelles technologies, encore plus connectées et moins chères que jamais. Il y a un besoin de technologies plus rapides pour transformer les systèmes existants et créer le nouveau ProjectList pour aujourd'hui et demain : présence en ligne, interconnexion avec tous les systèmes d'information, nouveaux ProjectList en temps réel, meilleure compréhension des besoins des clients.",
+    "description": "Aujourd'hui, les entreprises doivent développer des systèmes d'information et des logiciels complexes dont les caractéristiques principales sont leur capacité à évoluer, leur fiabilité ainsi que leur performance. Les exigences des entreprises évoluent encore plus rapidement avec l'apparition de nouveaux acteurs du marché et de modèles économiques disruptifs soutenus par la promesse de nouvelles technologies, encore plus connectées et moins chères que jamais. Il y a un besoin de technologies plus rapides pour transformer les systèmes existants et créer de nouveaux projets pour aujourd'hui et demain : présence en ligne, interconnexion avec tous les systèmes d'information, nouveaux projets en temps réel, meilleure compréhension des besoins des clients.",
     "modules": {
       "title": "Modules SIGL",
       "description": "Afin de mieux préparer nos étudiants au monde des affaires, la spécialité SIGL est axée sur 4 grands thèmes, chacun apportant une partie des compétences et de la culture nécessaires pour construire les technologies de demain.",
@@ -43,7 +43,7 @@
       },
       "project2": {
         "title": "IoT",
-        "description": "Création d'un objet IoT et mise en place de processus marketing et commerciaux (business case, publicité) ainsi que la réalisation"
+        "description": "Création d'un objet IoT de la mise en place de stratégie marketing et commerciale (business case, benchmark, publicité) à la conception de l'objet"
       },
       "project3": {
         "title": "Pratique et Expérimentation",

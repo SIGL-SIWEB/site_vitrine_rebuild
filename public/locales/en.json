@@ -10,7 +10,7 @@
   },
   "home": {
     "title": "Information Systems & Software Engineering",
-    "description": "Nowadays, companies have to develop Information Systems and complex softwares which core features are their ability to evolve, their reliability as well as their performance. Companies requirements are evolving even faster with the apparition of new market actors and disruptive business models backed up by the promise of new technologies, even more connected and cheaper than ever. There is a need for faster technologies in order to transform existing systems and create the new business ProjectList for both today and tomorrow : Online Presence, Interconnection with all Information Systems, new real-time ProjectList, better understanding of client needs.",
+    "description": "Nowadays, companies have to develop Information Systems and complex software whose core features are their ability to evolve, their reliability, as well as their performance. Companies' requirements are evolving even faster with the appearance of new market actors and disruptive business models backed up by the promise of new technologies, even more connected and cheaper than ever. There is a need for faster technologies in order to transform existing systems and create new business projects for both today and tomorrow: Online Presence, Interconnection with all Information Systems, new real-time projects, and a better understanding of client needs.",
     "modules": {
       "title": "SIGL Modules",
       "description": "In order to better prepare our students for the business community, SIGL specialty is focused on 4 major topics, every one of which bringing a part of the skills and culture required in order to build tomorrow's technologies.",
@@ -43,7 +43,7 @@
       },
       "project2": {
         "title": "IoT",
-        "description": "Creation of an IoT Object and build marketing & business processes (Business Case, Advertising) as well as the realization"
+        "description": "Creation of an IoT object, from setting up a marketing and sales strategy (business case, benchmark, advertising) to designing the object."
       },
       "project3": {
         "title": "Practice & Experiment",

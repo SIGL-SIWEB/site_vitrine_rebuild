@@ -87,7 +87,6 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
   .init({
     lng: 'fr',
     fallbackLng: 'en',
-    debug: true,
     backend: {
       loadPath: '/locales/{{lng}}.json'
     },
