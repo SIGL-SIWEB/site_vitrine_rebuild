@@ -347,59 +347,59 @@ export function ModuleList() {
 
   return (
     <div className="mt-10 space-y-20">
-            {moduleList.map((group, index) => (
-              <FadeIn key={index}>
-                <Border className="grid grid-cols-1 gap-x-8 gap-y-8 pt-16">
-                  <div className="grid grid-cols-1 gap-6 lg:grid-cols-1 xl:gap-8">
-                    <FadeIn>
-                      <h2 className="font-display text-2xl font-semibold text-[#38598F]">
-                        {group.title}
-                      </h2>
-                    </FadeIn>
-                    <div className="lg:col-span-3">
-                        {group.courses.map((course, index) => (
-                          <div key={index}>
-                            <Accordion>
-                              <AccordionSummary
-                                expandIcon={<ArrowDropDownIcon />}
-                                aria-controls="panel2-content"
-                                id="panel2-header"
-                                className='p-4 bg-[#F0F4F8] rounded-lg'
-                              >
-                                <Typography className='text-[#38598F] font-semibold text-lg'>{course.name}</Typography>
-                              </AccordionSummary>
-                              <AccordionDetails className='bg-[#F0F4F8]'>
-                                {course.teacher.map((teacher, index) => (
-                                  <div key={index} className='mb-7'>
-                                    <span className='text-lg text-[#1E3C63]'>{teacher.name}</span>
-                                    <br />
-                                    <span className='text-sm text-black'>{teacher.role}</span>
-                                  </div>
-                                ))}
-                                <div className='flex'>
-                                  <div>
-                                    <span className='text-lg text-[#1E3C63]'>{course.obj}</span>
-                                    {course.objectives.map((objective, index) => (
-                                        <li key={index} className="text-base text-black">{objective}</li>
-                                    ))}
-                                  </div>
-                                </div>
-                                <div className='flex justify-end'>
-                                    {course.project && (
-                                      <Button href={course.project}>
-                                        {course.button}
-                                      </Button>
-                                    )}
-                                </div>
-                              </AccordionDetails>
-                            </Accordion>
+      {moduleList.map((group, index) => (
+        <FadeIn key={index}>
+          <Border className="grid grid-cols-1 gap-x-8 gap-y-8 pt-16">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-1 xl:gap-8">
+              <FadeIn>
+                <h2 className="font-display text-2xl font-semibold text-[#38598F]">
+                  {group.title}
+                </h2>
+              </FadeIn>
+              <div className="lg:col-span-3">
+                {group.courses.map((course, index) => (
+                  <div key={index}>
+                    <Accordion>
+                      <AccordionSummary
+                        expandIcon={<ArrowDropDownIcon />}
+                        aria-controls="panel2-content"
+                        id="panel2-header"
+                        className='p-4 bg-[#F0F4F8] rounded-lg'
+                      >
+                        <Typography className='text-[#38598F] font-semibold text-lg'>{course.name}</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails className='bg-[#F0F4F8]'>
+                        {course.teacher.map((teacher, index) => (
+                          <div key={index} className='mb-7'>
+                            <span className='text-lg text-[#1E3C63]'>{teacher.name}</span>
+                            <br />
+                            <span className='text-sm text-black'>{teacher.role}</span>
                           </div>
-                          ))}
+                        ))}
+                        <div className='flex'>
+                          <div>
+                            <span className='text-lg text-[#1E3C63]'>{course.obj}</span>
+                            {course.objectives.map((objective, index) => (
+                                <li key={index} className="text-base text-black">{objective}</li>
+                            ))}
+                          </div>
+                        </div>
+                        <div className='flex justify-end'>
+                          {course.project && (
+                            <Button href={course.project}>
+                              {course.button}
+                            </Button>
+                          )}
+                        </div>
+                      </AccordionDetails>
+                    </Accordion>
                   </div>
-                </div>
-              </Border>
-            </FadeIn>
-          ))}
-        </div>
+                ))}
+              </div>
+            </div>
+          </Border>
+        </FadeIn>
+      ))}
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { Border } from '@/app/components/Border';
 import { Container } from '@/app/components/Container';
 import { FadeIn } from '@/app/components/FadeIn';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 
 import acoo from '@/app/assets/projects/acoo.png'
@@ -28,7 +28,7 @@ export function ProjectDisplay() {
       setTimeout(() => {
         element?.scrollIntoView({
           behavior: 'smooth',
-          block: 'center',
+          block: 'start'
         });
       }, 0);
     }
