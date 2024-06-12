@@ -15,7 +15,7 @@ export function Quote() {
 
   const alumnis = [
     { name: 'Romain Villar', promotion: 2012, quote: t('home.quotes.villar') },
-    { name: 'Peter Drucker', promotion: 2009, quote: t('home.quotes.peter') },
+    { name: 'Romain Villar', promotion: 2012, quote: t('home.quotes.villar') },
   ];
   return (
     <div className='relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32 mt-24 sm:mt-32 lg:mt-40'>
