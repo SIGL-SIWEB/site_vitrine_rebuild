@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Site Vitrine SIGL
 
-## Getting Started
+## Description
 
-First, run the development server:
+Le site vitrine SIGL est le site de présentation de la majeure Système Information & Génie Logiciel (SIGL) d'EPITA. Ce site met en avant la majeure SIGL en détaillant les différents modules avec leurs cours, les projets de la majeure, des citations et des photos des promotions précédentes, ainsi qu'un moyen de contacter SIWEB et un lien vers l'intranet SIGL.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Pour installer et configurer le projet, suivez les étapes ci-dessous :
+1. Clonez le projet et accéder au projet :
+   ```bash
+   git clone git@github.com:SIGL-SIWEB/site_vitrine_rebuild.git && cd site_vitrine_rebuild/
+   ```
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+3. Démarrez le projet en mode développement :
+   ```bash
+   npm run dev
+   ```
+4. Accédez au site via [http://localhost:3000](http://localhost:3000).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+Le projet est organisé de la manière suivante :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `/src/app/`, vous trouverez les dossiers correspondant à chaque page (alumnis, contact, courses, home, project).
+- `/src/app/asset/`, vous trouverez toutes les images, photos et icônes utilisées.
+- `/src/app/styles/`, vous trouverez les fichiers de styles CSS.
+- `/public/locales/`, vous trouverez les fichiers utilisés pour la traduction du site, un fichier par langue.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Fonctionnalités
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Home : La page d'accueil présente la majeure avec les quatre modules et leur description, des citations d'alumnis, des exemples de projets de la majeure, les opportunités de débouchés après la majeure, et un carousel d'événements SIGL.
+- Courses : La page des cours détaille chaque module avec le nom des professeurs, leurs professions, et la description des cours.
+- Project : La page des projets décrit les projets réalisés dans le cadre des cours associés.
+- Alumnis : Cette page présente les promotions passées de SIGL avec une photo de classe et le nom des délégués.
+- Contact : La page de contact permet de contacter SIWEB pour poser des questions sur la majeure.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Documentation
+
+Ce projet a été réalisé avec [Next.js](https://nextjs.org/):
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
