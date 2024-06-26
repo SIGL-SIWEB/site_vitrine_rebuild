@@ -1,14 +1,16 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button } from '@/app/components/Button'
 import { FadeIn } from '@/app/components/FadeIn'
 import { TextInput } from '@/app/contact/TextInput'
 import { useTranslation } from 'react-i18next'
+import emailjs from "@emailjs/browser";
 
 export function ContactForm() {
   const { t } = useTranslation('fr', { useSuspense: false });
-  const emailToSend = 'siwebofficiel@gmail.com';
+
+  useEffect(() => emailjs.init("F3uSlHjS6irw_7HkA"), []);
   
   const [formData, setFormData] = useState({
       name: '',
@@ -33,21 +35,28 @@ export function ContactForm() {
       });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
       e.preventDefault();
+      const serviceId = "service_mtybz65";
+      const templateId = "template_p63mfs9";
 
       const newErrors = {
         name: formData.name === '',
         email: formData.email === '',
         message: formData.message === ''
       };
-  
+
       if (newErrors.name || newErrors.email || newErrors.message) {
         setErrors(newErrors);
       } else {
-        const mailtoLink = `mailto:${emailToSend}?subject=[FAQ][SIGL] Question du site vitrine&body=Bonjour,%0D%0A%0D%0AL'étudiant ${formData.name} (${formData.email}) vous a envoyé cette question via la FAQ du site vitrine :%0D%0A%0D%0A${formData.message}%0D%0A%0D%0ACordialement,%0D%0A%0D%0A-- %0D%0AFAQ site vitrine SIGL`;
-        window.location.href = mailtoLink;
+        await emailjs.send(serviceId, templateId, {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        });
+        alert("email successfully sent check inbox");
       }
+  
   };
   
  
