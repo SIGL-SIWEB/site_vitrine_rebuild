@@ -6,6 +6,7 @@ import { FadeIn } from '@/app/components/FadeIn'
 import { TextInput } from '@/app/contact/TextInput'
 import { useTranslation } from 'react-i18next'
 import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify'
 
 export function ContactForm() {
   const { t } = useTranslation('fr', { useSuspense: false });
@@ -54,9 +55,8 @@ export function ContactForm() {
           email: formData.email,
           message: formData.message
         });
-        alert("email successfully sent check inbox");
+        toast.success("email successfully sent check inbox");
       }
-  
   };
   
  
