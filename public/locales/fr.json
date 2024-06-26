@@ -542,6 +542,7 @@
       "question": "Question"
     },
     "button": "Soumettez votre question !",
+    "sending": "Envoi en cours...",
     "toast": "Votre question a été envoyée avec succès !"
   }
 }

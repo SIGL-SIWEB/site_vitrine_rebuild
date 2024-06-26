@@ -24,6 +24,8 @@ export function ContactForm() {
     email: false,
     message: false
   });
+
+  const [loading, setLoading] = useState(false);
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setFormData({
@@ -50,12 +52,20 @@ export function ContactForm() {
       if (newErrors.name || newErrors.email || newErrors.message) {
         setErrors(newErrors);
       } else {
-        await emailjs.send(serviceId, templateId, {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message
-        });
-        toast.success(t('contact.toast'));
+        setLoading(true);
+        try {
+          await emailjs.send(serviceId, templateId, {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message
+          });
+          toast.success(t('contact.toast'));
+          setFormData({ name: '', email: '', message: '' });
+        } catch (error) {
+          console.error(error);
+        } finally {
+          setLoading(false);
+        }
       }
   };
   
@@ -76,8 +86,8 @@ export function ContactForm() {
           />
           <TextInput label={t('contact.email.question')} name="message" value={formData.message} onChange={handleChange} error={errors.message}/>
         </div>
-        <Button type="submit" className="mt-10">
-          {t('contact.button')}
+        <Button type="submit" className={`mt-10 ${loading ? 'bg-gray-400' : ''}`} disabled={loading}>
+          {loading ? t('contact.sending') : t('contact.button')}
         </Button>
       </form>
     </FadeIn>

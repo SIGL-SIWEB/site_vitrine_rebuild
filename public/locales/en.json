@@ -542,6 +542,7 @@
       "question": "Question"
     },
     "button": "Submit your question !",
+    "sending": "Sending...",
     "toast": "Your question has been sent successfully !"
   }
 }
