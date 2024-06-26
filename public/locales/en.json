@@ -541,6 +541,7 @@
       "email": "Email",
       "question": "Question"
     },
-    "button": "Submit your question !"
+    "button": "Submit your question !",
+    "toast": "Your question has been sent successfully !"
   }
 }

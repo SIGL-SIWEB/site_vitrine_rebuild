@@ -55,7 +55,7 @@ export function ContactForm() {
           email: formData.email,
           message: formData.message
         });
-        toast.success("email successfully sent check inbox");
+        toast.success(t('contact.toast'));
       }
   };
   
