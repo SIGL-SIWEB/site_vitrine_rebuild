@@ -26,3 +26,4 @@ i18n
       escapeValue: false
     }
   });
+  
