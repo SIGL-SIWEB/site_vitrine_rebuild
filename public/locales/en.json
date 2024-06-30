@@ -458,7 +458,7 @@
           "teachers": {
             "teacher1": {
               "name": "Yassine Chertouk",
-              "role": "Product manager | Fintech Blockchain"
+              "role": "Co-fondateur & Dirigeant @ Ruya consulting"
               }
             },
           "objectives": {
@@ -541,6 +541,8 @@
       "email": "Email",
       "question": "Question"
     },
-    "button": "Submit your question !"
+    "button": "Submit your question !",
+    "sending": "Sending...",
+    "toast": "Your question has been sent successfully !"
   }
 }

@@ -1,4 +1,6 @@
 import { RootLayout } from '@/app/components/RootLayout';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '@/app/styles/globals.css';
 
 const title = 'SIGL | Système d’Information et Génie Logiciel | Majeure Epita';
@@ -34,6 +36,7 @@ export default function Layout({
       {/* <Metadata /> */}
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
+        <ToastContainer theme="light"/>
       </body>
     </html>
   );

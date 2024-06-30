@@ -9,17 +9,21 @@ export function LanguageSwitcher() {
   const [isFrench, setIsFrench] = useState(true);
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('language');
-    if (savedLanguage) {
-      setIsFrench(savedLanguage === 'fr');
-      i18n.changeLanguage(savedLanguage);
-    }
+    const changeLanguage = async () => {
+      const savedLanguage = localStorage.getItem('language');
+      if (savedLanguage) {
+        setIsFrench(savedLanguage === 'fr');
+        await i18n.changeLanguage(savedLanguage);
+      }
+    };
+  
+    changeLanguage();
   }, [i18n]);
   
-  const handleLangChange = () => {
+  const handleLangChange = async () => {
     const newLanguage = isFrench ? 'en' : 'fr';
     setIsFrench(!isFrench);
-    i18n.changeLanguage(newLanguage);
+    await i18n.changeLanguage(newLanguage);
     localStorage.setItem('language', newLanguage);
   };
 
