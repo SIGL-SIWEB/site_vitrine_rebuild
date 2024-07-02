@@ -84,7 +84,7 @@
         "job1": "Chef de projet",
         "job2": "Ingénieur Méthodes / Qualité",
         "job3": "Assistance Maîtrise d'ouvrage",
-        "job4": "Developpeur Business"
+        "job4": "Développeur Business"
       }
     },
     "events": {
@@ -458,7 +458,7 @@
           "teachers": {
             "teacher1": {
               "name": "Yassine Chertouk",
-              "role": "Product manager | Fintech Blockchain"
+              "role": "Co-fondateur & Dirigeant @ Ruya consulting"
               }
             },
           "objectives": {
@@ -541,6 +541,8 @@
       "email": "Email",
       "question": "Question"
     },
-    "button": "Soumettez votre question !"
+    "button": "Soumettez votre question !",
+    "sending": "Envoi en cours...",
+    "toast": "Votre question a été envoyée avec succès !"
   }
 }
