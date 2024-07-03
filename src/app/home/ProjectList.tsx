@@ -10,7 +10,7 @@ import imageLaptop from '@/app/assets/shutterstock/laptop.jpg'
 import { useTranslation } from 'react-i18next'
 
 export function ProjectList() {
-    const { t } = useTranslation('fr', { useSuspense: false });
+    const { t } = useTranslation();
     return (
         <>
         <div id="projects">

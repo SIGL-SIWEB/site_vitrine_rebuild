@@ -15,7 +15,7 @@ interface NavigationItem {
 }
 
 export function NavBar() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
   const [isScroll, setScroll] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

@@ -6,7 +6,7 @@ import { FadeIn, FadeInStagger } from '@/app/components/FadeIn'
 import { useTranslation } from 'react-i18next'
 
 export function ModuleList() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
   return (
     <>
       <div id="modules">

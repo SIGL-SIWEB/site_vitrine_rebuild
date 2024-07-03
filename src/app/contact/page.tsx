@@ -6,7 +6,7 @@ import { ContactForm } from '@/app/contact/ContactForm'
 import { useTranslation } from 'react-i18next'
 
 export default function Contact() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
   return (
     <>
       <PageIntro eyebrow={t('contact.header')} title={t('contact.title')}></PageIntro>

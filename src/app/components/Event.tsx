@@ -20,7 +20,7 @@ import disintegration from '@/app/assets/events/disintegration.jpg'
 import { useTranslation } from 'react-i18next'
 
 export function Event() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
 
   const images = [
     {

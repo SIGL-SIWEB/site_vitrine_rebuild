@@ -11,7 +11,7 @@ import '@/app/styles/quote.css'
 import { useTranslation } from 'react-i18next'
 
 export function Quote() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
 
   const alumnis = [
     { name: 'Romain Villar', promotion: 2012, quote: t('home.quotes.villar') },

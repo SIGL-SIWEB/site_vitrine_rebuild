@@ -5,7 +5,7 @@ import { ProjectDisplay } from '@/app/project/ProjectDisplay'
 import { useTranslation } from 'react-i18next'
 
 export default function Project() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
 
   return (
     <>

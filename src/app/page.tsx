@@ -10,7 +10,7 @@ import { Opportunities } from "@/app/home/Opportunities"
 import { useTranslation } from "react-i18next"
 
 export default function Home() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">

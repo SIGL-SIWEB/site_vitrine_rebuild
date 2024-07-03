@@ -6,7 +6,7 @@ import { FadeIn, FadeInStagger } from '@/app/components/FadeIn'
 import { useTranslation } from 'react-i18next'
 
 export function Opportunities() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
   return (
     <>
       <SectionIntro

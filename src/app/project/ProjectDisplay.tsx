@@ -18,7 +18,7 @@ import ubsi from '@/app/assets/projects/ubsi.png'
 import www from '@/app/assets/projects/www.png'
 
 export function ProjectDisplay() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
   const refs = useRef<{ [key: string]: HTMLParagraphElement | null }>({});
 
   useEffect(() => {

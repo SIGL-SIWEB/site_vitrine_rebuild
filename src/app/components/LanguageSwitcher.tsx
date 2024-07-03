@@ -5,8 +5,8 @@ import fr from '@/app/assets/flag/France.png';
 import en from '@/app/assets/flag/England.png';
 
 export function LanguageSwitcher() {
-  const { i18n } = useTranslation('fr', { useSuspense: false });
-  const [isFrench, setIsFrench] = useState(true);
+  const { i18n } = useTranslation();
+  const [isFrench, setIsFrench] = useState(i18n.language === 'fr');
 
   useEffect(() => {
     const changeLanguage = async () => {
@@ -29,11 +29,11 @@ export function LanguageSwitcher() {
 
   return (
     <button onClick={handleLangChange}>
-      {
-        isFrench
-          ? <Image src={en} alt="English" className="w-6 h-auto" />
-          : <Image src={fr} alt="French" className="w-6 h-auto" />
-      }
+      {isFrench ? (
+        <Image src={en} alt="English" className="w-6 h-auto" />
+      ) : (
+        <Image src={fr} alt="French" className="w-6 h-auto" />
+      )}
     </button>
   );
 }

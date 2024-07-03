@@ -9,7 +9,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify'
 
 export function ContactForm() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
 
   useEffect(() => emailjs.init("F3uSlHjS6irw_7HkA"), []);
   

@@ -5,7 +5,7 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
   
 export function CourseList() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
     return (
       <div>
         <Container className="mt-40">

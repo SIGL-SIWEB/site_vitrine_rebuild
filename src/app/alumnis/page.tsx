@@ -17,7 +17,7 @@ let alumnis = [{ image: promo2024, title: 'SIGL - 2024', names: ['Victor Crépin
                ]
 
 export default function Alumnis() {
-  const { t } = useTranslation('fr', { useSuspense: false });
+  const { t } = useTranslation();
   return (
     <>
       <PageIntro eyebrow={t('alumnis.header')} title={t('alumnis.title')}>
