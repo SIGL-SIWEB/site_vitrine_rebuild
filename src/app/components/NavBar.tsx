@@ -4,10 +4,10 @@ import '@/app/styles/navbar.css';
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa6';
 import { RxCross2 } from "react-icons/rx";
-import Link from 'next/link'
-import sigl_image from '@/app/assets/logo/sigl.jpg'
+import Link from 'next/link';
+import sigl_image from '@/app/assets/logo/sigl.jpg';
 import { LanguageSwitcher } from '@/app/components/LanguageSwitcher';
-import { useTranslation  } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 interface NavigationItem {
   name: string;
@@ -57,7 +57,7 @@ export function NavBar() {
           </Link>
           <div className="lg:flex md:flex sm:flex xs:hidden lg:justify-center">
             {navigation.map((item, index) => (
-              <a key={index} href={item.href} className="text-[#1E3C63] lg:px-6 md:px-4 xs:px-2">
+              <a key={index} href={item.href} className={`text-[#1E3C63] lg:mx-6 md:mx-4 xs:mx-2 hover:text-[#00182e]`}>
                 <strong>{item.name}</strong>
               </a>
             ))}
