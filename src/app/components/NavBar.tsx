@@ -57,7 +57,7 @@ export function NavBar() {
           </Link>
           <div className="lg:flex md:flex sm:flex xs:hidden lg:justify-center">
             {navigation.map((item, index) => (
-              <a key={index} href={item.href} className={`text-[#1E3C63] lg:mx-6 md:mx-4 xs:mx-2 hover:text-[#00182e]`}>
+              <a key={index} href={item.href} className="text-[#1E3C63] lg:mx-6 md:mx-4 xs:mx-2 hover:text-[#00182e]">
                 <strong>{item.name}</strong>
               </a>
             ))}
