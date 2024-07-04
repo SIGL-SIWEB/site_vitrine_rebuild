@@ -55,9 +55,9 @@ export function NavBar() {
           >
             <Image src={sigl_image} alt="logo SIGL" className="w-20 h-auto" />
           </Link>
-          <div className="lg:flex md:flex sm:flex xs:hidden lg:justify-center">
+          <div className="lg:flex md:flex sm:flex xs:hidden lg:space-x-16 md:space-x-8 xs:space-x-4 lg:justify-center">
             {navigation.map((item, index) => (
-              <a key={index} href={item.href} className={`text-[#1E3C63] lg:mx-6 md:mx-4 xs:mx-2 hover:text-[#00182e]`}>
+              <a key={index} href={item.href} className="text-[#1E3C63] hover:text-[#5a7ca8]">
                 <strong>{item.name}</strong>
               </a>
             ))}

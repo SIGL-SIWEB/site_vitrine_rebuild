@@ -13,7 +13,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Footer } from '@/app/components/Footer'
 import { GridPattern } from '@/app/components/GridPattern'
 import { NavBar } from '@/app/components/NavBar'
-import ScrollBar from "@/app/components/ScrollBar";
+import '@/app/styles/ScrollBar.css';
 import '@/app/i18next'
 
 
@@ -47,7 +47,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
 
   return (
     <div>
-      <ScrollBar />
       <div className='fixed z-10 w-full'>
         <NavBar/>
       </div>
