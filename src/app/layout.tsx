@@ -12,7 +12,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
+    <html lang="en" className="h-full bg-neutral-200 text-base antialiased">
       <head>
         {/* Primary Meta Tags */}
         <title>SIGL | Système d’Information et Génie Logiciel | Majeure Epita</title>
