@@ -7,26 +7,41 @@ import { RxCross2 } from "react-icons/rx";
 import Link from 'next/link'
 import sigl_image from '@/app/assets/logo/sigl.jpg'
 import { LanguageSwitcher } from '@/app/components/LanguageSwitcher';
-import { useTranslation  } from 'react-i18next';
+import { useLanguage } from '@/app/components/LanguageContext';
 
 interface NavigationItem {
   name: string;
   href: string;
 }
 
+const baseNavigation: { href: string }[] = [
+  { href: '/' },
+  { href: '/courses' },
+  { href: '/project' },
+  { href: '/alumnis' },
+  { href: '/contact' },
+  { href: 'https://intranet.sigl.epita.fr/' },
+];
+
+const translations = {
+  en: ['Home', 'Courses', 'Projects', 'Alumnis', 'Contact', 'Intranet'],
+  fr: ['Accueil', 'Cours', 'Projets', 'Alumnis', 'Contact', 'Intranet'],
+};
+
+const getNavigation = (isFrench: boolean): NavigationItem[] => {
+  const lang = isFrench ? 'fr' : 'en';
+  return baseNavigation.map((item, index) => ({
+    name: translations[lang][index],
+    href: item.href,
+  }));
+};
+
 export function NavBar() {
-  const { t } = useTranslation('fr', { useSuspense: false });
   const [isScroll, setScroll] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { isFrench } = useLanguage();
 
-  const navigation: NavigationItem[] = [
-    { name: t('navbar.Home'), href: '/' },
-    { name: t('navbar.Courses'), href: '/courses' },
-    { name: t('navbar.Projects'), href: '/project' },
-    { name: t('navbar.Alumnis'), href: '/alumnis' },
-    { name: t('navbar.Contact'), href: '/contact' },
-    { name: t('navbar.Intranet'), href: 'https://intranet.sigl.epita.fr/' },
-  ];
+  const navigation = getNavigation(isFrench);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +68,7 @@ export function NavBar() {
             aria-label="Home"
             className='lg:flex lg:flex-1 md:flex md:flex-1 xs:flex xs:flex-1'
           >
-            <Image src={sigl_image} alt="logo SIGL" className="w-20 h-auto" />
+            <Image src={sigl_image} alt="logo SIGL" priority className="w-20 h-auto" />
           </Link>
           <div className="lg:flex md:flex sm:flex xs:hidden lg:justify-center">
             {navigation.map((item, index) => (
@@ -64,7 +79,7 @@ export function NavBar() {
           </div>
           {isScroll && (
             <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-center xs:items-center text-white">
-              <strong>{t('SIGL')}</strong>
+              <strong>SIGL</strong>
             </div>
           )}
           <div className="lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end">
