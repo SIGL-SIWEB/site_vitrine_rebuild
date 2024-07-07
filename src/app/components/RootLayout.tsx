@@ -14,6 +14,7 @@ import { Footer } from '@/app/components/Footer'
 import { GridPattern } from '@/app/components/GridPattern'
 import { NavBar } from '@/app/components/NavBar'
 import { LanguageProvider } from '@/app/components/LanguageContext'
+import '@/app/styles/ScrollBar.css';
 import '@/app/i18next'
 
 
