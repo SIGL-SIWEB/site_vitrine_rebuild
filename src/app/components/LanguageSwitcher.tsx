@@ -9,7 +9,7 @@ export function LanguageSwitcher({ isFrench, onLanguageChange }: { isFrench: boo
 
   useEffect(() => {
     const changeLanguage = async () => {
-      const savedLanguage = localStorage.getItem('language');
+      const savedLanguage = localStorage.getItem('i18nextLng');
       if (savedLanguage) {
         onLanguageChange(savedLanguage === 'fr');
         await i18n.changeLanguage(savedLanguage);
@@ -23,7 +23,6 @@ export function LanguageSwitcher({ isFrench, onLanguageChange }: { isFrench: boo
     const newLanguage = isFrench ? 'en' : 'fr';
     onLanguageChange(!isFrench);
     await i18n.changeLanguage(newLanguage);
-    localStorage.setItem('language', newLanguage);
   };
 
   return (
