@@ -7,7 +7,6 @@ import { RxCross2 } from "react-icons/rx";
 import Link from 'next/link';
 import sigl_image from '@/app/assets/logo/sigl.jpg';
 import { LanguageSwitcher } from '@/app/components/LanguageSwitcher';
-import { useLanguage } from '@/app/components/LanguageContext';
 
 interface NavigationItem {
   name: string;
@@ -39,7 +38,7 @@ const getNavigation = (isFrench: boolean): NavigationItem[] => {
 export function NavBar() {
   const [isScroll, setScroll] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { isFrench } = useLanguage();
+  const [isFrench, setIsFrench] = useState(true);
 
   const navigation = getNavigation(isFrench);
 
@@ -58,6 +57,10 @@ export function NavBar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleLanguageChange = (isFrench: boolean) => {
+    setIsFrench(isFrench);
+  };
 
   return (
     <div>
@@ -83,7 +86,7 @@ export function NavBar() {
             </div>
           )}
           <div className="lg:flex lg:flex-1 lg:justify-end md:justify-end md:flex md:flex-1 xs:flex-1 xs:flex xs:justify-end">
-            <LanguageSwitcher />
+            <LanguageSwitcher isFrench={isFrench} onLanguageChange={handleLanguageChange} />
           </div>
           <div className="lg:hidden md:hidden sm:hidden xs:flex xs:justify-end pl-4">
             <button
