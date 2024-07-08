@@ -13,7 +13,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Footer } from '@/app/components/Footer'
 import { GridPattern } from '@/app/components/GridPattern'
 import { NavBar } from '@/app/components/NavBar'
-import { LanguageProvider } from '@/app/components/LanguageContext'
+import '@/app/styles/ScrollBar.css';
 import '@/app/i18next'
 
 
@@ -81,10 +81,8 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
   let [logoHovered, setLogoHovered] = useState(false)
 
   return (
-    <LanguageProvider>
-      <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
-        <RootLayoutInner key={pathname}>{children}</RootLayoutInner>
-      </RootLayoutContext.Provider>
-    </LanguageProvider>
+    <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
+      <RootLayoutInner key={pathname}>{children}</RootLayoutInner>
+    </RootLayoutContext.Provider>
   )
 }
