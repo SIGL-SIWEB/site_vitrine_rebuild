@@ -13,6 +13,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Footer } from '@/app/components/Footer'
 import { GridPattern } from '@/app/components/GridPattern'
 import { NavBar } from '@/app/components/NavBar'
+import '@/app/styles/ScrollBar.css';
 import '@/app/i18next'
 
 

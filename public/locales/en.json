@@ -1,13 +1,4 @@
 {
-  "SIGL": "SIGL",
-  "navbar": {
-    "Home": "Home",
-    "Courses": "Courses",
-    "Projects": "Projects",
-    "Alumnis": "Alumnis",
-    "Contact": "Contact",
-    "Intranet": "Intranet"
-  },
   "home": {
     "title": "Information Systems & Software Engineering",
     "description": "Nowadays, companies have to develop Information Systems and complex software whose core features are their ability to evolve, their reliability, as well as their performance. Companies' requirements are evolving even faster with the appearance of new market actors and disruptive business models backed up by the promise of new technologies, even more connected and cheaper than ever. There is a need for faster technologies in order to transform existing systems and create new business projects for both today and tomorrow: Online Presence, Interconnection with all Information Systems, new real-time projects, and a better understanding of client needs.",
