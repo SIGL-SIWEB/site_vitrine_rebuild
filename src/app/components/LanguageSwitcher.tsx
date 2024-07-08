@@ -1,18 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useTranslation  } from 'react-i18next';
 import Image from 'next/image';
+import { useLanguage } from '@/app/components/LanguageContext';
 import fr from '@/app/assets/flag/France.png';
 import en from '@/app/assets/flag/England.png';
 
 export function LanguageSwitcher() {
-  const { i18n } = useTranslation('fr', { useSuspense: false });
-  const [isFrench, setIsFrench] = useState(true);
+  const { i18n } = useTranslation();
+  const { isFrench, toggleLanguage } = useLanguage();
 
   useEffect(() => {
     const changeLanguage = async () => {
       const savedLanguage = localStorage.getItem('language');
       if (savedLanguage) {
-        setIsFrench(savedLanguage === 'fr');
         await i18n.changeLanguage(savedLanguage);
       }
     };
@@ -21,8 +21,8 @@ export function LanguageSwitcher() {
   }, [i18n]);
   
   const handleLangChange = async () => {
+    toggleLanguage();
     const newLanguage = isFrench ? 'en' : 'fr';
-    setIsFrench(!isFrench);
     await i18n.changeLanguage(newLanguage);
     localStorage.setItem('language', newLanguage);
   };

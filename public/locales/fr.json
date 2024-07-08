@@ -1,13 +1,4 @@
 {
-  "SIGL": "SIGL",
-  "navbar": {
-    "Home": "Accueil",
-    "Courses": "Cours",
-    "Projects": "Projets",
-    "Alumnis": "Alumnis",
-    "Contact": "Contact",
-    "Intranet": "Intranet"
-  },
   "home": {
     "title": "Système d'Information & Génie Logiciel",
     "description": "Aujourd'hui, les entreprises doivent développer des systèmes d'information et des logiciels complexes dont les caractéristiques principales sont leur capacité à évoluer, leur fiabilité ainsi que leur performance. Les exigences des entreprises évoluent encore plus rapidement avec l'apparition de nouveaux acteurs du marché et de modèles économiques disruptifs soutenus par la promesse de nouvelles technologies, encore plus connectées et moins chères que jamais. Il y a un besoin de technologies plus rapides pour transformer les systèmes existants et créer de nouveaux projets pour aujourd'hui et demain : présence en ligne, interconnexion avec tous les systèmes d'information, nouveaux projets en temps réel, meilleure compréhension des besoins des clients.",
