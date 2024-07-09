@@ -188,6 +188,9 @@ export function ModuleList() {
           teacher: [{
             name: t('courses.mobility.courses.course2.teachers.teacher1.name'),
             role: t('courses.mobility.courses.course2.teachers.teacher1.role'),
+          }, {
+            name: t('courses.mobility.courses.course2.teachers.teacher2.name'),
+            role: t('courses.mobility.courses.course2.teachers.teacher2.role'),
           }],
           obj: t('courses.mobility.courses.course2.objectives.title'),
           objectives: [
@@ -333,6 +336,9 @@ export function ModuleList() {
           teacher: [{
             name: t('courses.digitalization.courses.course6.teachers.teacher1.name'),
             role: t('courses.digitalization.courses.course6.teachers.teacher1.role'),
+          }, {
+            name: t('courses.digitalization.courses.course6.teachers.teacher2.name'),
+            role: t('courses.digitalization.courses.course6.teachers.teacher2.role'),
           }],
           obj: t('courses.digitalization.courses.course6.objectives.title'),
           objectives: [
