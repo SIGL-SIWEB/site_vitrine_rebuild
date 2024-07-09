@@ -111,7 +111,7 @@
           "teachers": {
             "teacher1": {
               "name": "Christophe Andreu",
-              "role": "Corporate Coach / Independent Consultant / Trainer | ACC"
+              "role": "Executive Coach ICF PCC | ANDREU Coaching & Conseil"
               }
             },
           "objectives": {
@@ -125,7 +125,7 @@
           "teachers": {
             "teacher1": {
               "name": "Anne Dewilde",
-              "role": "Head of EPITA's Innovation Laboratory | EPITA"
+              "role": "Responsible for special projects | EPITA"
               }
             },
           "objectives": {
@@ -156,7 +156,7 @@
           "teachers": {
             "teacher1": {
               "name": "Christophe Andreu",
-              "role": "Executive Coach ICF PCC"
+              "role": "Executive Coach ICF PCC | ANDREU Coaching & Conseil"
               }
             },
           "objectives": {
@@ -171,7 +171,7 @@
           "teachers": {
             "teacher1": {
               "name": "Laurence Jumeaux",
-              "role": "Vice-President Business Technology Innovation | Capgemini"
+              "role": "Vice-President Business Technology | Capgemini Invent | Sustainable IT"
               }
             },
           "objectives": {
@@ -193,7 +193,7 @@
           "teachers": {
             "teacher1": {
               "name": "Yannick Neff",
-              "role": "Group Cloud & Infrastructure Director | SUEZ"
+              "role": "Cloud & Infrastructure Director | SUEZ"
               }
             },
           "objectives": {
@@ -209,11 +209,11 @@
           "teachers": {
             "teacher1": {
               "name": "Nicolas Drouin",
-              "role": "Global Cloud Security Architect at Pluxee"
+              "role": "Cybersecurity Architect Manager | Pluxee"
               },
             "teacher2": {
               "name": "Lucas Boisserie",
-              "role": "Lead Senior SRE at Jump"
+              "role": "Lead Senior SRE | Jump"
               }
             },
           "objectives": {
@@ -228,7 +228,7 @@
           "teachers": {
             "teacher1": {
               "name": "Franck Brechet",
-              "role": "Partner | Tasmane"
+              "role": "IT strategy & data governance consultant | Tasmane"
               }
             },
           "objectives": {
@@ -244,11 +244,11 @@
           "teachers": {
             "teacher1": {
               "name": "Frédéric Fourdrinier",
-              "role": "Director World Wide Hybrid Cloud Practice | Hewlett Packard Enterprise"
+              "role": "World Wide Services Sales Director | Hewlett Packard Enterprise"
               },
             "teacher2": {
               "name": "Yannick Neff",
-              "role": "Group Cloud & Infrastructure Director | SUEZ"
+              "role": "Cloud & Infrastructure Director | SUEZ"
               }
             },
           "objectives": {
@@ -262,7 +262,7 @@
           "teachers": {
             "teacher1": {
               "name": "Jean-Christophe Ferry",
-              "role": "Owner & Co-founder | ENIOKA"
+              "role": "Owner & Co-founder | Enioka"
               }
             },
           "objectives": {
@@ -284,7 +284,7 @@
           "teachers": {
             "teacher1": {
               "name": "Robin Duval",
-              "role": "Agile Coach | Renault Group"
+              "role": "Cybersecurity Governance Pilot | Renault Group"
               }
             },
           "objectives": {
@@ -301,7 +301,11 @@
           "teachers": {
             "teacher1": {
               "name": "Lucas Boisserie",
-              "role": "DevOps Consultant | Octo Technology"
+              "role": "Lead Senior SRE | Jump"
+              },
+            "teacher2": {
+              "name": "Florent Fauchille",
+              "role": "Software Engineer | bettermarks GmbH"
               }
             },
           "objectives": {
@@ -315,7 +319,7 @@
           "teachers": {
             "teacher1": {
               "name": "Nicolas Drouin",
-              "role": "Global Cloud Security Architect at Pluxee"
+              "role": "Cybersecurity Architect Manager | Pluxee"
               }
             },
           "objectives": {
@@ -329,8 +333,8 @@
           "title": "MEPA : Agile Methodology",
           "teachers": {
             "teacher1": {
-              "name": "Robin Duval",
-              "role": "Agile Coach | Renault Group"
+              "name": "Georges Diegues",
+              "role": "Coach Agile & Formateur | OCTO Technology"
               }
             },
           "objectives": {
@@ -346,7 +350,7 @@
           "teachers": {
             "teacher1": {
               "name": "Robin Duval",
-              "role": "Agile Coach | Renault Group"
+              "role": "Cybersecurity Governance Pilot | Renault Group"
               }
             },
           "objectives": {
@@ -361,7 +365,7 @@
           "teachers": {
             "teacher1": {
               "name": "Lucas Boisserie",
-              "role": "DevOps Consultant | Octo Technology"
+              "role": "Lead Senior SRE | Jump"
               },
             "teacher2": {
               "name": "Florent Fauchille",
@@ -386,7 +390,7 @@
           "teachers": {
             "teacher1": {
               "name": "Jérémy Gredat",
-              "role": "Olivier Girard's Chief of Staff | Accenture France"
+              "role": "Chief of Staff to Olivier Girard Chairman | Accenture France Benelux"
               }
             },
           "objectives": {
@@ -400,7 +404,7 @@
           "teachers": {
             "teacher1": {
               "name": "Antoine Tallon",
-              "role": "Talent & leadership consulting | Korn Ferry"
+              "role": "Executive Talent Advisor | Beyond Associés"
               }
             },
           "objectives": {
@@ -414,7 +418,7 @@
           "teachers": {
             "teacher1": {
               "name": "Hervé Durand",
-              "role": "Head of Digital Foundry | Airbus"
+              "role": "Head of Digital Foundry | Airbus / Secure Land Communications Transformation Office"
               }
             },
           "objectives": {
@@ -429,11 +433,11 @@
           "teachers": {
             "teacher1": {
               "name": "Frédéric Fourdrinier",
-              "role": "Director World Wide Hybrid Cloud Practice | Hewlett Packard Enterprise"
+              "role": "World Wide Services Sales Director | Hewlett Packard Enterprise"
               },
             "teacher2": {
               "name": "Hervé Durand",
-              "role": "Head of Digital Foundry | Airbus"
+              "role": "Head of Digital Foundry | Airbus / Secure Land Communications Transformation Office"
               }
             },
           "objectives": {
@@ -449,7 +453,7 @@
           "teachers": {
             "teacher1": {
               "name": "Yassine Chertouk",
-              "role": "Co-fondateur & Dirigeant @ Ruya consulting"
+              "role": "Co-fondateur & Dirigeant | Ruya consulting"
               }
             },
           "objectives": {
@@ -464,7 +468,11 @@
           "teachers": {
             "teacher1": {
               "name": "Julien Guisset",
-              "role": "Co-founder & Manager | EXALT"
+              "role": "Co-fondateur | Head of Tech offerings | eXalt"
+              },
+            "teacher2": {
+              "name": "Victor Coatalem",
+              "role": "Fullstack Software Engineer | Padoa"
               }
             },
           "objectives": {
