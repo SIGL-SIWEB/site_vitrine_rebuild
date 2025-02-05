@@ -129,7 +129,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Apprendre à se connaître",
             "objective2": "Développer son savoir-être",
             "objective3": "Comprendre les concepts clés de la communication et du travail d'équipe"
@@ -144,7 +144,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Appréhender et comprendre le Système d'Information du point de vue de l'entreprise",
             "objective2": "Identifier les rôles, missions et le positionnement de la MOA",
             "objective3": "Déterminer les responsabilités respectives entre MOA et MOE",
@@ -160,7 +160,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Être en mesure de gérer rationnellement son temps, d’appliquer efficacement son organisation personnelle et son mode de fonctionnement, afin d’accroître sa performance dans la réalisation des ses activités",
             "objective2": "Être en mesure de renforcer son efficacité professionnelle par une meilleure qualité de sa communication tant écrite qu’orale",
             "objective3": "Être capable, de conduire à bien son projet professionnel de concert avec sa vie privée"
@@ -175,7 +175,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre l’impact du digital sur les organisations de la DSI",
             "objective2": "Comment améliorer la performance d’une DSI",
             "objective3": "Savoir bâtir la vision cible de la fonction informatique",
@@ -197,7 +197,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Valider les acquis d’une méthode d’architecture en concevant un Cloud et une application Cloud-Based",
             "objective2": "Développer les connaissances autour d’un Cloud Computing",
             "objective3": "Tester une solution de Cloud basée sur les technologies OpenSource ou propriétaires"
@@ -217,7 +217,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre la technologie des containers et son architecture",
             "objective2": "Découvrir les bonnes pratiques des containers et leur écosystème",
             "objective3": "Savoir utiliser et intégrer des containers dans une chaîne d'intégration et de déploiement continue"
@@ -232,7 +232,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre la typologies des données, les usages courants et les nouveaux usages",
             "objective2": "Découvrir le master data management",
             "objective3": "Sécuriser la donnée",
@@ -252,7 +252,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre et appliquer une démarche de solution architecture",
             "objective2": "Comprendre les enjeux et composants de l’infrastructure"
           }
@@ -266,7 +266,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Découvrir la réalité des systèmes d'information dans une entreprise",
             "objective2": "Comprendre les bases du middleware qui le soutiennent",
             "objective3": "Comprendre les enjeux de l'intégration dans le système d'information",
@@ -309,7 +309,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre la valeur ajoutée du DevOps par rapport aux méthodes de développement classiques",
             "objective2": "Comprendre la transformation DevOps dans le cadre d'un projet"
           }
@@ -323,7 +323,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre les concepts et les domaines de la sécurité dans un système d'information",
             "objective2": "Définir une approche de sécurité dans un projet technique et organisationnel",
             "objective3": "Comprendre les nouveaux paradigmes de sécurité dans les architectures cloud et conteneurs"
@@ -338,7 +338,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Concepts généraux des problèmes de productivité du développement",
             "objective2": "Expérimenter les outils associés à la planification agile et aux méthodes de développement",
             "objective3": "Faire face à des problèmes tels que la repriorisation et le silver bullet"
@@ -354,7 +354,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Avoir une culture des nouveaux langages et frameworks",
             "objective2": "Intégration en entreprise",
             "objective3": "Effectuer un processus de comparaison et d'analyse"
@@ -373,7 +373,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Acquérir les concepts et principes clés de l'architecture logicielle",
             "objective2": "Placer l'architecture et l'architecte dans l'organisation",
             "objective3": "Savoir analyser la pertinence des technologies logicielles pour les besoins"
@@ -394,7 +394,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre les enjeux lors d'une transformation",
             "objective2": "Apprendre les notions clés de la gestion du changement"
           }
@@ -408,7 +408,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Utiliser des méthodes créatives et innovantes pour résoudre des problèmes",
             "objective2": "Appliquer des méthodes à des études de cas"
           }
@@ -422,7 +422,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Apprendre et pratiquer plusieurs méthodes de développement et de gestion de projet",
             "objective2": "Découvrir des modèles conceptuels et leurs applications dans un contexte professionnel",
             "objective3": "Participer à des simulations"
@@ -441,7 +441,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Comprendre et contrôler l'évolution du marché IT",
             "objective2": "Résoudre un problème d'entreprise en concevant et en créant une solution IoT",
             "objective3": "Développer des compétences de synthèse, d'analyse et d'innovation"
@@ -457,7 +457,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Apprendre à aborder les problèmes en utilisant la dichotomie",
             "objective2": "Identifier des solutions concrètes",
             "objective3": "Réaliser une mission de conseil"
@@ -476,7 +476,7 @@
               }
             },
           "objectives": {
-            "title": "Objectives",
+            "title": "Objectifs",
             "objective1": "Intégrer le principe de réalité dans le monde dans lequel nous vivons et la sensibilisation aux problèmes auxquels notre planète est confrontée : dérèglement climatique, pic pétrolier, épuisement des ressources...",
             "objective2": "Promouvoir une transition vers une économie à faible émission de carbone et la possibilité d'agir individuellement ou collectivement dans le contexte de la profession informatique",
             "objective3": "Faciliter l'action en informatique : appliquer une approche de développement logiciel guidée par la durabilité à la gestion de produit, au développement front / back et à l'exploitation de l'infrastructure"
