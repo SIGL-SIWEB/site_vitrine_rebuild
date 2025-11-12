@@ -4,12 +4,23 @@ import { PageIntro } from "@/app/components/PageIntro";
 import { AlumnisDisplay } from "@/app/alumnis/AlumnisDisplay";
 import { useTranslation } from "react-i18next";
 
+import promo2026 from "@/app/assets/alumnis/2026.jpg";
 import promo2025 from "@/app/assets/alumnis/2025.jpg";
 import promo2024 from "@/app/assets/alumnis/2024.jpg";
 import promo2023 from "@/app/assets/alumnis/2023.jpg";
 import promo2019 from "@/app/assets/alumnis/2019.jpeg";
 
 const alumnis = [
+  {
+    image: promo2026,
+    title: "SIGL - 2026",
+    names: ["Augustin Glorian", "Matéo Bachelier"],
+    linkedinUrl: [
+      "https://www.linkedin.com/in/augustin-glorian/",
+      "https://www.linkedin.com/in/mateo-bachelier/",
+    ],
+    year: 2026,
+  },
   {
     image: promo2025,
     title: "SIGL - 2025",
