@@ -15,11 +15,11 @@ export default function Intranet() {
       </PageIntro>
 
       <div>
-        <Container className="mt-40">
+        <Container className="mt-20">
             <Button className="mt-10" href="https://intranet.sigl.epita.fr" target="_blank">
                 {t("intranet.link")}
             </Button>
-            <p>
+            <p className="mt-6">
                 {t("intranet.no_credentials")}
             </p>
             <p>
