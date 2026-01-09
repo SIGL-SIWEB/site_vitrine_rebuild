@@ -19,7 +19,7 @@ const baseNavigation: { href: string }[] = [
   { href: '/project' },
   { href: '/alumnis' },
   { href: '/contact' },
-  { href: 'https://intranet.sigl.epita.fr/' },
+  { href: '/intranet' },
 ];
 
 const translations = {

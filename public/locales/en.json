@@ -7,19 +7,19 @@
       "description": "In order to better prepare our students for the business community, SIGL specialty is focused on 4 major topics, every one of which bringing a part of the skills and culture required in order to build tomorrow's technologies.",
       "leadership": {
         "title": "Leadership and Management",
-      "description": "Handling the new business models in order to answer the IT governance's new challenges and train tomorrow's managers"
+        "description": "Handling the new business models in order to answer the IT governance's new challenges and train tomorrow's managers"
       },
       "cloud": {
         "title": "Cloud and Architecture",
-      "description": "Understanding the building and functioning process of Information Systems as well as its technical architecture. Discovering Cloud technologies and Big Data"
+        "description": "Understanding the building and functioning process of Information Systems as well as its technical architecture. Discovering Cloud technologies and Big Data"
       },
       "mobility": {
         "title": "Mobility and Applications",
-      "description": "Discover and grasp the new software challenges in order to integrate it in growing mobility requirements"
+        "description": "Discover and grasp the new software challenges in order to integrate it in growing mobility requirements"
       },
       "digitalization": {
         "title": "Digitalization and Transformation",
-      "description": "Understanding and make Digital Transformation viable for companies as well as discovering the new innovation levers provided by the growing sector of IT business"
+        "description": "Understanding and make Digital Transformation viable for companies as well as discovering the new innovation levers provided by the growing sector of IT business"
       }
     },
     "quotes": {
@@ -112,8 +112,8 @@
             "teacher1": {
               "name": "Christophe Andreu",
               "role": "Executive Coach ICF PCC | ANDREU Coaching & Conseil"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Coaching workshops",
@@ -126,8 +126,8 @@
             "teacher1": {
               "name": "Anne Dewilde",
               "role": "Responsible for special projects | EPITA"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Learn to know yourself",
@@ -141,8 +141,8 @@
             "teacher1": {
               "name": "Guillaume Barbier",
               "role": "Project Management Officer | Imerys"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Apprehend and understand Information System from a company's Point of view",
@@ -157,8 +157,8 @@
             "teacher1": {
               "name": "Christophe Andreu",
               "role": "Executive Coach ICF PCC | ANDREU Coaching & Conseil"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Being able to manage time, and efficiently apply a personal organization",
@@ -172,8 +172,8 @@
             "teacher1": {
               "name": "Laurence Jumeaux",
               "role": "Vice-President Business Technology | Capgemini Invent | Sustainable IT"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Understand digital impact on Information Systems",
@@ -194,8 +194,8 @@
             "teacher1": {
               "name": "Yannick Neff",
               "role": "Cloud & Infrastructure Director | SUEZ"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Validate skills acquisition by building an hybrid cloud and a cloud-based application",
@@ -210,12 +210,12 @@
             "teacher1": {
               "name": "Nicolas Drouin",
               "role": "Cybersecurity Architect Manager | Pluxee"
-              },
+            },
             "teacher2": {
               "name": "Lucas Boisserie",
               "role": "Lead Senior SRE | Jump"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Understand container technology and architecture",
@@ -229,8 +229,8 @@
             "teacher1": {
               "name": "Franck Brechet",
               "role": "IT strategy & data governance consultant | Tasmane"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Understand the typologies of data, current uses and new uses",
@@ -245,12 +245,12 @@
             "teacher1": {
               "name": "Frédéric Fourdrinier",
               "role": "World Wide Services Sales Director | Hewlett Packard Enterprise"
-              },
+            },
             "teacher2": {
               "name": "Yannick Neff",
               "role": "Cloud & Infrastructure Director | SUEZ"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Understand and practice the implementation of a Solution Architecture",
@@ -263,8 +263,8 @@
             "teacher1": {
               "name": "Jean-Christophe Ferry",
               "role": "Owner & Co-founder | Enioka"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Discover Information Systems reality in a company",
@@ -285,8 +285,8 @@
             "teacher1": {
               "name": "Robin Duval",
               "role": "Cybersecurity Governance Pilot | Renault Group"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Toolbox for other SIGL courses",
@@ -302,12 +302,12 @@
             "teacher1": {
               "name": "Lucas Boisserie",
               "role": "Lead Senior SRE | Jump"
-              },
+            },
             "teacher2": {
               "name": "Florent Fauchille",
               "role": "Software Engineer | bettermarks GmbH"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Understand DevOps added value against classical development methods",
@@ -320,8 +320,8 @@
             "teacher1": {
               "name": "Nicolas Drouin",
               "role": "Cybersecurity Architect Manager | Pluxee"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Understand the concepts and areas of security within an information system",
@@ -335,8 +335,8 @@
             "teacher1": {
               "name": "Georges Diegues",
               "role": "Coach Agile & Formateur | OCTO Technology"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "General concepts of development productivity's issues",
@@ -351,8 +351,8 @@
             "teacher1": {
               "name": "Robin Duval",
               "role": "Cybersecurity Governance Pilot | Renault Group"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Have a culture of new languages and frameworks",
@@ -366,12 +366,12 @@
             "teacher1": {
               "name": "Lucas Boisserie",
               "role": "Lead Senior SRE | Jump"
-              },
+            },
             "teacher2": {
               "name": "Florent Fauchille",
               "role": "Software Engineer | bettermarks GmbH"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Acquire key concepts and principles of Software Architecture",
@@ -391,8 +391,8 @@
             "teacher1": {
               "name": "Jérémy Gredat",
               "role": "Chief of Staff to Olivier Girard Chairman | Accenture France Benelux"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Understad what's at stake during a transformation",
@@ -405,8 +405,8 @@
             "teacher1": {
               "name": "Antoine Tallon",
               "role": "Executive Talent Advisor | Beyond Associés"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Use creative and innovative methods for problem solving",
@@ -419,8 +419,8 @@
             "teacher1": {
               "name": "Hervé Durand",
               "role": "Head of Digital Foundry | Airbus / Secure Land Communications Transformation Office"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Learn and practice several development and project management methods",
@@ -434,12 +434,12 @@
             "teacher1": {
               "name": "Frédéric Fourdrinier",
               "role": "World Wide Services Sales Director | Hewlett Packard Enterprise"
-              },
+            },
             "teacher2": {
               "name": "Hervé Durand",
               "role": "Head of Digital Foundry | Airbus / Secure Land Communications Transformation Office"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Undestand and control the evolution of the IT market",
@@ -454,8 +454,8 @@
             "teacher1": {
               "name": "Yassine Chertouk",
               "role": "Co-fondateur & Dirigeant | Ruya consulting"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Learn how to approach issues using dichotomy",
@@ -469,12 +469,12 @@
             "teacher1": {
               "name": "Julien Guisset",
               "role": "Co-fondateur | Head of Tech offerings | eXalt"
-              },
+            },
             "teacher2": {
               "name": "Victor Coatalem",
               "role": "Fullstack Software Engineer | Padoa"
-              }
-            },
+            }
+          },
           "objectives": {
             "title": "Objectives",
             "objective1": "Integrate the reality principle into the world we are living in and the awareness for the issues our planet is facing : climate deregulation, peak oil, ressources depletion...",
@@ -535,7 +535,7 @@
   "contact": {
     "header": "Contact us",
     "title": "Question & Answer",
-    "email":  {
+    "email": {
       "name": "Name",
       "email": "Email",
       "question": "Question"
@@ -543,5 +543,14 @@
     "button": "Submit your question !",
     "sending": "Sending...",
     "toast": "Your question has been sent successfully !"
+  },
+  "intranet": {
+    "header": "Intranet - SIGL",
+    "title": "Intranet",
+    "description": "Welcome to the SIGL Intranet, your central hub for accessing exclusive resources, updates, and information tailored specifically for our SIGL community members.",
+    "link": "Access the SIGL intranet",
+    "no_credentials": "If you do not yet have your credentials, or have forgotten them, please use the password recovery feature on the login page. Please note that the recovery email may end up in your Spam folder.",
+    "contact": "If you encounter any issues accessing the intranet, please do not hesitate to contact us via",
+    "contact_link": "the contact page"
   }
 }
